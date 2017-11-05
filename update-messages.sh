@@ -14,5 +14,8 @@ TARGET=$DIR/messages.pot
 # find strings per module
 xgettext --files-from $DIR/POTFILES.in --output $TARGET
 
+# update charset to `UTF-8`
+sed -r "s/charset=CHARSET/charset=UTF-8/" --in-place $TARGET
+
 # clear the english template
 msgen $TARGET --output-file $DIR/en/LC_MESSAGES/hangupsbot.po
