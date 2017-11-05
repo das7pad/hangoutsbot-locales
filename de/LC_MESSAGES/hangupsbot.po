@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-30 19:29+0800\n"
+"POT-Creation-Date: 2017-11-05 09:40+0100\n"
 "PO-Revision-Date: 2017-03-30 01:15+0000\n"
 "Last-Translator: Carsten Raddatz <git@carsten-raddatz.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/hangoutsbot/"
@@ -19,75 +19,260 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.13-dev\n"
 
-#: commands/basic.py:45
-msgid ""
-"<b>Impersonation:</b><br /><b><pre>{}</pre></b><br /><b><pre>{}</pre></"
-"b><br />"
+#: hangupsbot/commands/tagging.py:21
+msgid "\"here\" cannot be used for type \"{}\""
 msgstr ""
 
-#: commands/basic.py:51
-msgid "<b>User commands:</b>"
-msgstr "<b>Benutzerkommandos:</b>"
+#: hangupsbot/commands/tagging.py:37
+msgid "tagged <b><i>{}</i></b> with <b><i>{}</i></b>"
+msgstr ""
 
-#: commands/basic.py:56
-msgid "<i>For more information, please see: {}</i>"
-msgstr "<i>Für mehr Informationen, siehe bitte: {}</i>"
+#: hangupsbot/commands/tagging.py:40 hangupsbot/commands/tagging.py:56
+msgid "<b><i>{}</i></b> unchanged"
+msgstr ""
 
-#: commands/basic.py:60
-msgid "<b>Admin commands:</b>"
-msgstr "<b>Admin-Kommandos:</b>"
+#: hangupsbot/commands/tagging.py:42 hangupsbot/commands/tagging.py:58
+msgid "<b>supply type, conv_id, tag</b>"
+msgstr ""
 
-#: commands/basic.py:85
+#: hangupsbot/commands/tagging.py:53
+msgid "removed <b><i>{}</i></b> from <b><i>{}</i></b>"
+msgstr ""
+
+#: hangupsbot/commands/tagging.py:69
+msgid "entries removed: <b><i>{}</i></b>"
+msgstr ""
+
+#: hangupsbot/commands/tagging.py:71
+msgid "<b>supply type, conv_id</b>"
+msgstr ""
+
+#: hangupsbot/commands/tagging.py:79
+msgid "<b>supply command name</b>"
+msgstr ""
+
+#: hangupsbot/commands/tagging.py:84
+#, python-format
+msgid "<b><i>COMMAND: %s</i></b> does not exist"
+msgstr ""
+
+#: hangupsbot/commands/tagging.py:144
+msgid "<b><i>COMMAND: {}</i></b> has no tags"
+msgstr ""
+
+#: hangupsbot/commands/tagging.py:146
+msgid "<b><i>COMMAND: {}</i></b>, match <b>ANY</b>:"
+msgstr ""
+
+#: hangupsbot/commands/tagging.py:160
+msgid "index: <b><i>{}</i></b>"
+msgstr ""
+
+#: hangupsbot/commands/tagging.py:162
+msgid "key: <i>{}</i>"
+msgstr ""
+
+#: hangupsbot/commands/tagging.py:170
+msgid "<b>no entries to list</b>"
+msgstr ""
+
+#: hangupsbot/commands/tagging.py:206
+msgid "<b>supply chat_id, optional conv_id</b>"
+msgstr ""
+
+#: hangupsbot/commands/tagging.py:232
+msgid "<b>supply conv_id, optional tag list</b>"
+msgstr ""
+
+#: hangupsbot/commands/tagging.py:242
+msgid "<em>no tags returned</em>"
+msgstr ""
+
+#: hangupsbot/commands/tagging.py:248
+msgid "<b>no users found</b>"
+msgstr ""
+
+#: hangupsbot/commands/alias.py:12
+#, python-brace-format
+msgid ""
+"Get the alias for the current or given conversation\n"
+"{bot_cmd} gethoalias\n"
+"admin-only:\n"
+"{bot_cmd} gethoalias <convID>\n"
+"{bot_cmd} gethoalias all"
+msgstr ""
+
+#: hangupsbot/commands/alias.py:15
+#, python-brace-format
+msgid ""
+"Set or unset the alias for the current or given conversation\n"
+"{bot_cmd} sethoalias <alias>\n"
+"{bot_cmd} sethoalias none\n"
+"{bot_cmd} sethoalias <alias> <convID>\n"
+"{bot_cmd} sethoalias none <convID>"
+msgstr ""
+
+#: hangupsbot/commands/alias.py:79
+msgid "Check Arguments"
+msgstr ""
+
+#: hangupsbot/commands/alias.py:95
+msgid "<i>HO alias deleted</i>"
+msgstr ""
+
+#: hangupsbot/commands/alias.py:96
+#, python-brace-format
+msgid "<i>HO alias for</i>  {conv_id} <i>deleted</i>"
+msgstr ""
+
+#: hangupsbot/commands/alias.py:100
+#, python-brace-format
+msgid "<i>HO alias set to</i>  <b>{newalias}</b>"
+msgstr ""
+
+#: hangupsbot/commands/alias.py:103
+#, python-brace-format
+msgid "<i>HO alias for</i>  {conv_id} <i>is set to</i>  <b>{newalias}</b>"
+msgstr ""
+
+#: hangupsbot/commands/alias.py:118
+msgid "Too many arguments!"
+msgstr ""
+
+#: hangupsbot/commands/alias.py:121
+msgid "You are not authorized to do that!"
+msgstr ""
+
+#: hangupsbot/commands/alias.py:126
+msgid "<u>List of HO Aliases</u>"
+msgstr ""
+
+#: hangupsbot/commands/alias.py:136
+msgid "<i>There is no alias set for this HO</i>"
+msgstr ""
+
+#: hangupsbot/commands/alias.py:138
+#, python-brace-format
+msgid "<i>There is no alias set for the HO</i> {conv_id}"
+msgstr ""
+
+#: hangupsbot/commands/alias.py:142
+#, python-brace-format
+msgid "<i>Current HO alias is</i>  <b>{alias}</b>"
+msgstr ""
+
+#: hangupsbot/commands/alias.py:145
+#, python-brace-format
+msgid "<i>HO alias for</i>  {conv_id} <i>is</i>  <b>{alias}</b>"
+msgstr ""
+
+#: hangupsbot/commands/__init__.py:445
+msgid "command execution of \"{}\" timed out"
+msgstr ""
+
+#: hangupsbot/commands/__init__.py:544
 msgid "command help not available"
 msgstr ""
 
-#: commands/basic.py:114
+#: hangupsbot/commands/basic.py:41
+msgid "impersonation: supply chat id and optional conversation id"
+msgstr ""
+
+#: hangupsbot/commands/basic.py:44
+msgid ""
+"<b>Impersonation:</b>\n"
+"<b><i>{}</i></b>\n"
+"<b><i>{}</i></b>\n"
+msgstr ""
+
+#: hangupsbot/commands/basic.py:50
+msgid "<b>User commands:</b>"
+msgstr "<b>Benutzerkommandos:</b>"
+
+#: hangupsbot/commands/basic.py:56
+msgid "<i>For more information, please see: {}</i>"
+msgstr "<i>Für mehr Informationen, siehe bitte: {}</i>"
+
+#: hangupsbot/commands/basic.py:61
+msgid "<b>Admin commands:</b>"
+msgstr "<b>Admin-Kommandos:</b>"
+
+#: hangupsbot/commands/basic.py:94
 msgid "<i>{}, I've sent you some help ;)</i>"
 msgstr "<i>{}, Ich habe Dir Hilfe geschickt ;)</i>"
 
-#: commands/basic.py:123
+#: hangupsbot/commands/basic.py:102
 msgid "locale set to: {}"
 msgstr ""
 
-#: commands/basic.py:125
+#: hangupsbot/commands/basic.py:104
 msgid "locale unchanged"
 msgstr ""
 
-#: commands/basic.py:127
+#: hangupsbot/commands/basic.py:106
 msgid "language code required"
 msgstr ""
 
-#: commands/basic.py:177
+#: hangupsbot/commands/basic.py:151
 msgid "<i>{}, search did not match a single group conversation</i>"
 msgstr ""
 
-#: commands/basic.py:218
+#: hangupsbot/commands/basic.py:183
+#, python-format
+msgid "no conversation was matched: %s"
+msgstr ""
+
+#: hangupsbot/commands/basic.py:185
+msgid "unrecognised {} for optout, value={}"
+msgstr ""
+
+#: hangupsbot/commands/basic.py:191
 msgid "<i>{}, you <b>opted-in</b> for bot private messages</i>"
 msgstr "<i>{}, Du hast private Nachrichten vom Bot <b>angeschaltet</b></i>"
 
-#: commands/basic.py:221
+#: hangupsbot/commands/basic.py:194
 msgid "<i>{}, you <b>opted-out</b> from bot private messages</i>"
 msgstr "<i>{}, Du hast private Nachrichten vom Bot <b>abgeschaltet</b></i>"
 
-#: commands/basic.py:223
+#: hangupsbot/commands/basic.py:196
 msgid ""
 "<i>{}, you are <b>opted-out</b> from the following conversations:\n"
 "{}</i>"
 msgstr ""
 
-#: commands/basic.py:234
+#: hangupsbot/commands/basic.py:209
 msgid "Bot Version: <b>{}</b>"
 msgstr "Bot Version: <b>{}</b>"
 
-#: commands/basic.py:265
+#: hangupsbot/commands/basic.py:215
+msgid "Python Version: <b>{}</b>"
+msgstr ""
+
+#: hangupsbot/commands/basic.py:221
+msgid "running in a virtual environment"
+msgstr ""
+
+#: hangupsbot/commands/basic.py:222
+msgid "running outside a virtual environment"
+msgstr ""
+
+#: hangupsbot/commands/basic.py:231
+msgid "module unknown"
+msgstr ""
+
+#: hangupsbot/commands/basic.py:233
+msgid "version unknown"
+msgstr ""
+
+#: hangupsbot/commands/basic.py:256
 msgid "{}: Unknown Command"
 msgstr ""
 
-#: commands/basic.py:275
+#: hangupsbot/commands/basic.py:266
 msgid "{}: Can't do that."
 msgstr ""
 
-#: commands/convid.py:32
+#: hangupsbot/commands/convid.py:34
 msgid ""
 "<em>1 parameter required, {} supplied - enclose parameter in double-quotes</"
 "em>"
@@ -95,776 +280,389 @@ msgstr ""
 "<em>1 Parameter benötigt, {} gegeben - Parameter in Anführungszeichen "
 "setzen</em>"
 
-#: commands/convid.py:35
+#: hangupsbot/commands/convid.py:37
 msgid "<em>supply 1 parameter</em>"
 msgstr "<em>Bitte 1 Parameter übergeben</em>"
 
-#: commands/convid.py:40 plugins/default.py:203
+#: hangupsbot/commands/convid.py:42
 msgid "<b>Total: {}</b>"
 msgstr "<b>Gesamt: {}</b>"
 
-#: commands/convid.py:55
+#: hangupsbot/commands/convid.py:57
 msgid "<em>sending to ALL conversations not allowed</em>"
 msgstr "<em>Senden an ALLE Unterhaltungen ist nicht erlaubt</em>"
 
-#: commands/convid.py:64
-msgid "<em>command echo blocked</em>"
-msgstr "<em>Kommando echo blockiert</em>"
-
-#: commands/convid.py:68
+#: hangupsbot/commands/convid.py:62
 msgid "<em>missing text</em>"
 msgstr "<em>Fehlender Text</em>"
 
-#: commands/convid.py:72
+#: hangupsbot/commands/convid.py:65
 msgid "<em>required parameters: convfilter text</em>"
 msgstr "<em>Benötigte Parameter: convfilter text</em>"
 
-#: commands/convid.py:76
+#: hangupsbot/commands/convid.py:68
 msgid "<em>no conversations filtered</em>"
 msgstr "<em>Keine Unterhaltungen gefiltert</em>"
 
-#: commands/convid.py:97
+#: hangupsbot/commands/convid.py:85
+#, python-format
+msgid "No conversation matched \"%s\""
+msgstr ""
+
+#: hangupsbot/commands/convid.py:92
+msgid "Failed to rename!"
+msgstr ""
+
+#: hangupsbot/commands/convid.py:96
 msgid "<em>missing title</em>"
 msgstr "<em>Fehlender Titel</em>"
 
-#: commands/convid.py:102
+#: hangupsbot/commands/convid.py:99
 msgid "<em>required parameters: convfilter title</em>"
 msgstr "<em>Benötigte Parameter: convfilter Titel</em>"
 
-#: commands/convid.py:112
+#: hangupsbot/commands/convid.py:107
 msgid "<em>should be 1 parameter, {} supplied</em>"
 msgstr "<em>Sollte 1 Parameter sein, {} geliefert</em>"
 
-#: commands/convid.py:115
+#: hangupsbot/commands/convid.py:111
 msgid "<em>retrieving ALL conversations blocked</em>"
 msgstr "<em>Holen ALLER Unterhaltungen wurde blockiert</em>"
 
-#: commands/convid.py:132
+#: hangupsbot/commands/convid.py:116
+msgid "Users in <b>{}</b>"
+msgstr ""
+
+#: hangupsbot/commands/convid.py:130
 msgid "<b>Users: {}</b>"
 msgstr "<b>Benutzer: {}</b>"
 
-#: commands/convid.py:149
+#: hangupsbot/commands/convid.py:147
 msgid "<em>cannot leave ALL conversations</em>"
 msgstr "<em>Verlassen ALLER Unterhaltungen nicht möglich</em>"
 
-#: commands/convid.py:156
+#: hangupsbot/commands/convid.py:151
 msgid "<em>required parameters: convfilter</em>"
 msgstr "<em>Benötigte Parameter: convfilter</em>"
 
-#: commands/convid.py:162
+#: hangupsbot/commands/convid.py:156
+#: hangupsbot/plugins/telesync/commands_tg.py:504
 msgid "I'll be back!"
 msgstr "Ich komme wieder!"
 
-#: commands/tagging.py:32
-msgid "tagged <b><pre>{}</pre></b> with <b><pre>{}</pre></b>"
+#: hangupsbot/commands/plugincontrol.py:131
+#: hangupsbot/commands/plugincontrol.py:177
+msgid "not previously loaded"
 msgstr ""
 
-#: commands/tagging.py:34 commands/tagging.py:49
-msgid "<b><pre>{}</pre></b> unchanged"
+#: hangupsbot/commands/plugincontrol.py:133
+msgid "unloaded"
 msgstr ""
 
-#: commands/tagging.py:36 commands/tagging.py:51
-msgid "<b>supply type, id, tag</b>"
+#: hangupsbot/commands/plugincontrol.py:138
+#: hangupsbot/commands/plugincontrol.py:162
+#: hangupsbot/commands/plugincontrol.py:187
+msgid "<b>module path required</b>"
 msgstr ""
 
-#: commands/tagging.py:47
-msgid "removed <b><pre>{}</pre></b> from <b><pre>{}</pre></b>"
+#: hangupsbot/commands/plugincontrol.py:152
+msgid "loaded"
 msgstr ""
 
-#: commands/tagging.py:62
-msgid "entries removed: <b><pre>{}</pre></b>"
+#: hangupsbot/commands/plugincontrol.py:154 hangupsbot/sync/__init__.py:761
+msgid "failed"
 msgstr ""
 
-#: commands/tagging.py:64
-msgid "<b>supply type, id</b>"
+#: hangupsbot/commands/plugincontrol.py:157
+msgid "already loaded"
 msgstr ""
 
-#: commands/tagging.py:75
-msgid "<b><pre>COMMAND: {}</pre></b> does not exist"
+#: hangupsbot/commands/plugincontrol.py:180
+msgid "reloaded"
 msgstr ""
 
-#: commands/tagging.py:125
-msgid "<b><pre>COMMAND: {}</pre></b> has no tags"
+#: hangupsbot/commands/plugincontrol.py:182
+msgid "failed reload"
 msgstr ""
 
-#: commands/tagging.py:127
-msgid "<b><pre>COMMAND: {}</pre></b>, match <b>ANY</b>:"
+#: hangupsbot/commands/plugincontrol.py:228
+#: hangupsbot/commands/plugincontrol.py:279
+msgid "plugin name is missing!"
 msgstr ""
 
-#: commands/tagging.py:131
-msgid "<b>supply command name</b>"
-msgstr ""
-
-#: commands/tagging.py:144
-msgid "index: <b><pre>{}</pre></b>"
-msgstr ""
-
-#: commands/tagging.py:146
-msgid "key: <pre>{}</pre>"
-msgstr ""
-
-#: commands/tagging.py:154
-msgid "<b>no entries to list</b>"
-msgstr ""
-
-#: commands/tagging.py:191
-msgid "<b>supply chat_id, optional conv_id</b>"
-msgstr ""
-
-#: commands/tagging.py:218
-msgid "<b>supply conv_id, optional tag list</b>"
-msgstr ""
-
-#: commands/tagging.py:229
-msgid "<em>no tags returned</em>"
-msgstr ""
-
-#: commands/tagging.py:233
-msgid "<b>no users found</b>"
-msgstr ""
-
-#: handlers.py:182
-msgid "{}: {}"
-msgstr ""
-
-#: handlers.py:191
-msgid "{}: Missing parameter(s)"
-msgstr ""
-
-#: hangupsbot.py:116
-msgid "{} already registered in shared"
-msgstr ""
-
-#: hangupsbot.py:400
-msgid "memory: {} is 1on1 with {}"
-msgstr ""
-
-#: hangupsbot.py:457
+#: hangupsbot/plugins/autoreply.py:18
 #, python-brace-format
 msgid ""
-"<i>Hi there! I'll be using this channel to send private messages and alerts. "
-"For help, type <b>{0} help</b>. To keep me quiet, reply with <b>{0} optout</"
-"b>.</i>"
+"adds or removes an autoreply.\n"
+"Format:\n"
+"add:\n"
+" {bot_cmd} autoreply add [[\"question1\",\"question2\"],\"answer\"]\n"
+"remove:\n"
+" {bot_cmd} autoreply remove [[\"question\"],\"answer\"]\n"
+"view all autoreplies:\n"
+" {bot_cmd} autoreply"
 msgstr ""
 
-#: hangupsbot.py:799
-msgid "Unidentified User"
-msgstr ""
-
-#: hangupsbot.py:807
-msgid ""
-"<i>{}, you are currently opted-out. Private message me or enter <b>{} "
-"optout</b> to get me to talk to you.</i>"
-msgstr ""
-"<i>{}, Du bist gerade im opt-out. Schicke mir eine private Nachricht oder "
-"gibt <b>{} optout</b> ein um mich wieder mit Dir sprechen zu lassen.</i>"
-
-#: hangupsbot.py:810
-msgid ""
-"<i>{}, before I can help you, you need to private message me and say hi.</i>"
-msgstr ""
-"<i>{}, bevor ich Dir helfen kann, musst Du mir eine private Nachricht "
-"schicken und Hi sagen.</i>"
-
-#: hangupsbot.py:963
-msgid "log detailed debugging messages"
-msgstr ""
-
-#: hangupsbot.py:965
-msgid "log file path"
-msgstr ""
-
-#: hangupsbot.py:967
-msgid "cookie storage path"
-msgstr ""
-
-#: hangupsbot.py:969
-msgid "memory storage path"
-msgstr ""
-
-#: hangupsbot.py:971
-msgid "config storage path"
-msgstr ""
-
-#: hangupsbot.py:973
-msgid "Maximum disconnect / reconnect retries before quitting"
-msgstr ""
-
-#: hangupsbot.py:975
-msgid "show program's version number and exit"
-msgstr ""
-
-#: hangupsbot.py:987
-msgid "Failed to create directory: {}"
-msgstr ""
-
-#: hangupsbot.py:995
-msgid "Failed to copy default config file: {}"
-msgstr ""
-
-#: plugins/_DEPRECATED_simplytranslate.py:48
-msgid "Translation server error: <i>{}</i>"
-msgstr ""
-
-#: plugins/_DEPRECATED_syncrooms_autotranslate.py:68
-msgid "<i>syncroom \"{}\" language is {}</i>"
-msgstr "<i>syncroom \"{}\" Sprache ist {}</i>"
-
-#: plugins/_DEPRECATED_syncrooms_autotranslate.py:81
-msgid "<i>syncroom \"{}\" language set to {}</i>"
-msgstr "<i>syncroom \"{}\" Sprache eingestellt auf {}</i>"
-
-#: plugins/_example/example_memory.py:22
-msgid "<b>{}</b>, remembered!"
-msgstr "<b>{}</b>, gemerkt!"
-
-#: plugins/_example/example_memory.py:27
-msgid "<b>{}</b>, remembered something else!"
-msgstr "<b>{}</b>, etwas anderes gemerkt!"
-
-#: plugins/_example/example_memory.py:38
-msgid "<b>{}</b>, nothing remembered!"
-msgstr "<b>{}</b>, nichts gemerkt!"
-
-#: plugins/_example/example_memory.py:43
-msgid "<b>{}</b> asked me to remember <i>\"{}\"</i>"
-msgstr "<b>{}</b> bat mich mir <i>\"{}\"</i> zu merken"
-
-#: plugins/_example/example_memory.py:54
-msgid "<b>{}</b>, nothing to forget!"
-msgstr "<b>{}</b>, nichts zu vergessen!"
-
-#: plugins/_example/example_memory.py:60
-msgid "<b>{}</b>, forgotten!"
-msgstr "<b>{}</b>, vergessen!"
-
-#: plugins/_example/example_memory.py:76
-msgid "<b>{}</b>, remembered for this conversation"
-msgstr "<b>{}</b>, wurde für diese Unterhaltung gemerkt"
-
-#: plugins/_example/example_memory.py:81
-msgid "<b>{}</b>, remembered something else for this conversation!"
-msgstr "<b>{}</b>, für diese Unterhaltung wurde sich etwas anderes gemerkt!"
-
-#: plugins/_example/example_memory.py:92
-msgid "<b>{}</b>, nothing remembered for this conversation!"
-msgstr "<b>{}</b>, für diese Unterhaltung wurde sich nichts gemerkt!"
-
-#: plugins/_example/example_memory.py:97
-msgid "<b>{}</b> asked me to remember <i>\"{}\" for this conversation</i>"
-msgstr ""
-"<b>{}</b> bat mich, mich <i> in dieser Unterhaltung \"{}\" </i> zu merken"
-
-#: plugins/_example/example_memory.py:108
-msgid "<b>{}</b>, nothing to forget for this conversation!"
-msgstr "<b>{}</b>, für diese Unterhaltung kann nichts vergessen werden!"
-
-#: plugins/_example/example_memory.py:114
-msgid "<b>{}</b>, forgotten for this conversation!"
-msgstr "<b>{}</b>, für diese Unterhaltung vergessen!"
-
-#: plugins/autoreply.py:110
+#: hangupsbot/plugins/autoreply.py:130
 msgid "Unidentified Conversation"
 msgstr ""
 
-#: plugins/botaliases.py:50
-msgid "<i>bot alias: {}</i>"
-msgstr "<i>Bot Alias: {}</i>"
+#: hangupsbot/plugins/botaddnotif.py:36
+msgid "<b>{}</b> has added me to hangout <b>{}</b>"
+msgstr ""
 
-#: plugins/botaliases.py:79
-msgid "<i>not authorised to change bot alias</i>"
-msgstr "<i>Nicht authorisiert den bot alias zu ändern</i>"
+#: hangupsbot/plugins/botaliases.py:10
+#, python-brace-format
+msgid ""
+"show, add and remove bot command aliases\n"
+"show:\n"
+"  {bot_cmd} botalias\n"
+"add:\n"
+"  {bot_cmd} botalias <single alias>\n"
+"remove  {bot_cmd} botalias remove <single alias or multiple aliases "
+"separated by blanks>"
+msgstr ""
 
-#: plugins/chance.py:50
+#: hangupsbot/plugins/botaliases.py:67
+msgid "<i>bot aliases: {}</i>"
+msgstr ""
+
+#: hangupsbot/plugins/botaliases.py:73
+msgid "<i>you are not authorised to change the bot alias</i>"
+msgstr ""
+
+#: hangupsbot/plugins/chance.py:10
+#, python-brace-format
+msgid ""
+"Rolls dice\n"
+"supply the number and sides of the dice as \"<b>n</b>d<b>s</b>\" to roll "
+"<b>n</b> dice with <b>s</b> sides\n"
+"\"d<b>s</b>\"will roll one <b>s</b> sided dice\n"
+"no parameters defaults to 1d6\n"
+"e.x. {bot_cmd} diceroll 4d3"
+msgstr ""
+
+#: hangupsbot/plugins/chance.py:15
+msgid "flip a coin"
+msgstr ""
+
+#: hangupsbot/plugins/chance.py:61
+msgid "number of dice must be between 1 and 99"
+msgstr ""
+
+#: hangupsbot/plugins/chance.py:63
+msgid "number of sides must be between 2 and 9999"
+msgstr ""
+
+#: hangupsbot/plugins/chance.py:65
 msgid "<i>{} rolled "
 msgstr ""
 
-#: plugins/chance.py:57
-msgid "<b>{}</b>"
-msgstr ""
-
-#: plugins/chance.py:59
+#: hangupsbot/plugins/chance.py:70
 msgid " totalling <b>{}</b></i>"
 msgstr ""
 
-#: plugins/chance.py:66
+#: hangupsbot/plugins/chance.py:84
 msgid "<i>{}, coin turned up <b>heads</b></i>"
 msgstr "<i>{}, Die Münze zeigt <b>Kopf</b></i>"
 
-#: plugins/chance.py:68
+#: hangupsbot/plugins/chance.py:86
 msgid "<i>{}, coin turned up <b>tails</b></i>"
 msgstr "<i>{}, Die Münze zeigt <b>Zahl</b></i>"
 
-#: plugins/convtools.py:77
+#: hangupsbot/plugins/convtools.py:15
+#, python-brace-format
+msgid ""
+"adds user(s) into a chat\n"
+"Usage: {bot_cmd} addusers <user id(s)> [into <chat id>]"
+msgstr ""
+
+#: hangupsbot/plugins/convtools.py:18
+#, python-brace-format
+msgid ""
+"add yourself into a chat\n"
+"Usage: {bot_cmd} addme <conv id>"
+msgstr ""
+
+#: hangupsbot/plugins/convtools.py:20
+#, python-brace-format
+msgid ""
+"create a new conversation with the bot and the specified user(s)\n"
+"Usage: {bot_cmd} createconversation <user id(s)>"
+msgstr ""
+
+#: hangupsbot/plugins/convtools.py:24
+#, python-brace-format
+msgid ""
+"refresh a chat\n"
+"Usage: {bot_cmd} refresh\n"
+"[conversation] <conversation id> [<without|remove> <user ids, space-"
+"separated if more than one>] [<with|add> <user id(s)>] [quietly] [norename]"
+msgstr ""
+
+#: hangupsbot/plugins/convtools.py:29
+#, python-brace-format
+msgid ""
+"create a new conversation without certain users\n"
+"Usage: {bot_cmd} kick\n"
+"[<conversation id, current if not specified>] [<user ids, space-separated if "
+"more than one>] [quietly]"
+msgstr ""
+
+#: hangupsbot/plugins/convtools.py:33
+#, python-brace-format
+msgid ""
+"remove users from a conversation\n"
+"Usage: {bot_cmd} realkick [<optional conversation id, current if not "
+"specified>] [<user ids, space-separated if more than one>]"
+msgstr ""
+
+#: hangupsbot/plugins/convtools.py:159
 msgid "supply the id of the conversation to join"
 msgstr ""
 
-#: plugins/convtools.py:155
+#: hangupsbot/plugins/convtools.py:162
+msgid "I am not attending this conversation"
+msgstr ""
+
+#: hangupsbot/plugins/convtools.py:191
+msgid "<i>conversation created</i>"
+msgstr ""
+
+#: hangupsbot/plugins/convtools.py:214
+#: hangupsbot/plugins/telesync/__init__.py:299
+msgid "remove"
+msgstr ""
+
+#: hangupsbot/plugins/convtools.py:214
+msgid "without"
+msgstr ""
+
+#: hangupsbot/plugins/convtools.py:216
+#: hangupsbot/plugins/telesync/__init__.py:301
+msgid "add"
+msgstr ""
+
+#: hangupsbot/plugins/convtools.py:216
+msgid "with"
+msgstr ""
+
+#: hangupsbot/plugins/convtools.py:218
+msgid "conversation"
+msgstr ""
+
+#: hangupsbot/plugins/convtools.py:220 hangupsbot/plugins/convtools.py:345
+#: hangupsbot/plugins/convtools.py:360
+msgid "quietly"
+msgstr ""
+
+#: hangupsbot/plugins/convtools.py:223 hangupsbot/plugins/convtools.py:343
+#: hangupsbot/plugins/convtools.py:357
+msgid "test"
+msgstr ""
+
+#: hangupsbot/plugins/convtools.py:225
+msgid "norename"
+msgstr ""
+
+#: hangupsbot/plugins/convtools.py:250
 msgid "conversation {} not found"
 msgstr ""
 
-#: plugins/convtools.py:158
-msgid "conversation {} is not a GROUP"
+#: hangupsbot/plugins/convtools.py:253
+#, python-format
+msgid "conversation %s is not a GROUP"
 msgstr ""
 
-#: plugins/convtools.py:161
+#: hangupsbot/plugins/convtools.py:256
 msgid "[DEFUNCT] {}"
 msgstr ""
 
-#: plugins/convtools.py:178
+#: hangupsbot/plugins/convtools.py:272
 msgid ""
-"<b>refresh:</b> {}<br /><b>rename old: {}</b><br /><b>removed {}:</b> {}<br /"
-"><b>added {}:</b> {}"
+"<b>refresh:</b> {}\n"
+"<b>rename old: {}</b>\n"
+"<b>removed {}:</b> {}\n"
+"<b>added {}:</b> {}"
 msgstr ""
 
-#: plugins/convtools.py:182
+#: hangupsbot/plugins/convtools.py:277
 msgid "<em>unchanged</em>"
 msgstr ""
 
-#: plugins/convtools.py:184 plugins/convtools.py:186 plugins/convtools.py:211
+#: hangupsbot/plugins/convtools.py:279 hangupsbot/plugins/convtools.py:281
+#: hangupsbot/plugins/convtools.py:320
 msgid "<em>none</em>"
 msgstr ""
 
-#: plugins/convtools.py:191
-msgid "<i>refreshing group...</i><br />"
-msgstr ""
-
-#: plugins/convtools.py:194
-msgid "<i>all users added</i><br />"
-msgstr ""
-
-#: plugins/convtools.py:202
-msgid "<i>group has been obsoleted</i>"
-msgstr ""
-
-#: plugins/convtools.py:205
-msgid ""
-"refreshed: <b><pre>{}</pre></b> (original id: <pre>{}</pre>).<br />new "
-"conversation id: <b><pre>{}</pre></b>.<br />removed {}: {}"
-msgstr ""
-
-#: plugins/convtools.py:214
+#: hangupsbot/plugins/convtools.py:284
 msgid "<b>nobody to add in the new conversation</b>"
 msgstr ""
 
-#: plugins/convtools.py:240
+#: hangupsbot/plugins/convtools.py:295
+msgid "<i>refreshing group...</i>\n"
+msgstr ""
+
+#: hangupsbot/plugins/convtools.py:299
+msgid "<i>all users added</i>\n"
+msgstr ""
+
+#: hangupsbot/plugins/convtools.py:310
+msgid "<i>group has been obsoleted</i>"
+msgstr ""
+
+#: hangupsbot/plugins/convtools.py:312
+msgid ""
+"refreshed: <b><pre>{}</pre></b> (original id: <pre>{}</pre>).\n"
+"new conversation id: <b><pre>{}</pre></b>.\n"
+"removed {}: {}"
+msgstr ""
+
+#: hangupsbot/plugins/convtools.py:348
 msgid "supply optional conversation id and valid user ids to kick"
 msgstr ""
 
-#: plugins/convtools.py:243
+#: hangupsbot/plugins/convtools.py:352
 msgid "supply at least one valid user id to kick"
 msgstr ""
 
-#: plugins/convtools_invitations.py:121
-msgid "<i>group created</i>"
-msgstr "<i>Gruppe erzeugt</i>"
-
-#: plugins/convtools_invitations.py:123
-msgid "GROUP: {}"
-msgstr "GRUPPE: {}"
-
-#: plugins/convtools_invitations.py:177
-msgid "<em>insufficient parameters for invite</em>"
+#: hangupsbot/plugins/convtools.py:380
+msgid "invalid G+ or Conversation ID {}"
 msgstr ""
 
-#: plugins/convtools_invitations.py:196
-msgid "<b>Test Invitation Purge</b>"
-msgstr ""
-
-#: plugins/convtools_invitations.py:198
-msgid "<b>Invitation Purge</b>"
-msgstr ""
-
-#: plugins/convtools_invitations.py:201
-msgid "<b>Invitation List</b>"
-msgstr ""
-
-#: plugins/convtools_invitations.py:230
-msgid "<em>no invites found</em>"
-msgstr "<em>Keine Einladungen gefunden</em>"
-
-#: plugins/convtools_invitations.py:298
-msgid "<em>invite: specify \"from\" or explicit list of \"users\"</em>"
-msgstr ""
-"<em>Einladung: spezifiziere \"von\" oder explizite Liste von \"Usern\"</em>"
-
-#: plugins/convtools_invitations.py:307
-msgid "<em>invite: could not identify target conversation"
-msgstr "<em>Einladung: konnte Ziel-Unterhaltung nicht identifizieren"
-
-#: plugins/convtools_invitations.py:373
-msgid "<em>invite: nobody invited</em>"
-msgstr "<em>Einladung: niemanden eingeladen</em>"
-
-#: plugins/convtools_invitations.py:399
-msgid "<em>invite: {} invitations created</em>"
-msgstr "<em>Einladung: {} Einladungen erzeugt</em>"
-
-#: plugins/convtools_invitations.py:418
-msgid "<b>Invites for {}:</b>"
-msgstr "<b>Einladungen für {}:</b>"
-
-#: plugins/convtools_invitations.py:423
+#: hangupsbot/plugins/convtools.py:384
 msgid ""
-"<em>To claim an invite, use the rsvp command followed by the invite code</em>"
-msgstr ""
-"<em>Um einer Einladung zu folgen, nutze das RVSP-Kommando gefolgt vom invite "
-"code</em>"
-
-#: plugins/convtools_invitations.py:426
-msgid "<em>no invites to display</em>"
-msgstr "<em>Keine Einladungen zum Anzeigen</em>"
-
-#: plugins/default.py:35
-msgid "<b>only admins can echo other conversations</b>"
+"These users are not in this conversation, try another one.\n"
+"{}"
 msgstr ""
 
-#: plugins/default.py:64
-msgid "broadcast: no message set"
-msgstr "broadcast: es wurde keine Nachricht gesendet"
-
-#: plugins/default.py:68
-msgid "broadcast: no conversations available"
-msgstr "broadcast: keine Konversationen verfügbar"
-
-#: plugins/default.py:72
-msgid "<b>message:</b><br />{}<br /><b>to:</b><br />{}"
-msgstr "<b>Nachricht: </b><br />{}<br /><b>an:</b><br />{}"
-
-#: plugins/default.py:83
-msgid "broadcast: message not allowed"
-msgstr "Broadcast: Nachricht nicht erlaubt"
-
-#: plugins/default.py:88
-msgid "broadcast: message must be supplied after subcommand"
-msgstr "broadcast: Nachricht muss nach dem Sub-Befehl mitgegeben werden"
-
-#: plugins/default.py:111
-msgid "broadcast: {} conversation(s)"
-msgstr "Broadcast: {} Unterhaltung(en)"
-
-#: plugins/default.py:128
-msgid "broadcast: removed {}"
-msgstr "Broadcast: {} entfernt"
-
-#: plugins/default.py:135
-msgid "broadcast: message sent to {} chats"
-msgstr "Broadcast: Nachricht an {} Chats gesendet"
-
-#: plugins/default.py:138
-msgid "broadcast: /bot broadcast [info|message|add|remove|NOW] ..."
-msgstr "Broadcast: /bot broadcast [info|message|add|remove|NOW] ..."
-
-#: plugins/default.py:141
-msgid "broadcast: /bot broadcast [info|message|add|remove|NOW]"
-msgstr "Broadcast: /bot broadcast [info|message|add|remove|NOW]"
-
-#: plugins/default.py:155
-msgid "supply search term"
-msgstr ""
-
-#: plugins/default.py:160
-msgid "results for user named \"{}\":"
-msgstr "Ergebnisse für User namens \"{}\":"
-
-#: plugins/default.py:205
-msgid "<b>List of hangouts with keyword:</b> \"<pre>{}</pre>\""
-msgstr ""
-
-#: plugins/default.py:306
-msgid "<em>note: testing single parameter as json</em>"
-msgstr "<em>Notiz: Teste einzelnen Parameter als json</em>"
-
-#: plugins/default.py:333
-msgid "append failed on non-list"
-msgstr "Hinzufügen schlug fehl, keine passende Liste angegeben"
-
-#: plugins/default.py:347
-msgid "remove failed on non-list"
-msgstr "Entfernen schlug fehl, keine passende Liste angegeben"
-
-#: plugins/default.py:357
-msgid "Parameter does not exist!"
-msgstr "Parameter existiert nicht!"
-
-#: plugins/default.py:382
-msgid "<b><pre>{}</pre></b>, chat_id = <i>{}</i>"
-msgstr ""
-
-#: plugins/default.py:390
-msgid "You are at <b><pre>{}</pre></b>, conv_id = <i><pre>{}</pre></i>"
-msgstr ""
-
-#: plugins/forecast.py:32
-msgid "No location was specified, please specify a location."
-msgstr ""
-
-#: plugins/forecast.py:37
-msgid "Unable to find the specified location."
-msgstr ""
-
-#: plugins/forecast.py:45
-msgid "This hangouts default location has been set to {}."
-msgstr ""
-
-#: plugins/humor_hangoutcalls.py:32
+#: hangupsbot/plugins/easteregg.py:17
 msgid ""
-"<b>It's been {} since the last call. Lonely? I can't reply you as I don't "
-"have speech synthesis (or speech recognition either!)</b>"
+"starts hangouts easter egg combos.\n"
+"supply up to three parameters:\n"
+"  - easter egg trigger name\n"
+"     ponies, pitchforks, bikeshed or shydino\n"
+"  - number of times\n"
+"  - period between eastereggs (in seconds)\n"
 msgstr ""
 
-#: plugins/humor_hangoutcalls.py:37
-msgid "<b>It's been {} since the last call. The last caller was <i>{}</i>.</b>"
-msgstr ""
-
-#: plugins/humor_hangoutcalls.py:42
-msgid "<b>No prizes for that call</b>"
-msgstr ""
-
-#: plugins/lookup.py:20
-msgid "Spreadsheet function disabled"
-msgstr "Funktion für Tabellenkalkulation deaktiviert"
-
-#: plugins/lookup.py:24
-msgid "Spreadsheet URL not set"
-msgstr "URL für Tabellenkalkulation nicht gesetzt"
-
-#: plugins/lookup.py:37
-msgid "Results for keyword <b>{}</b>:<br />"
-msgstr "Resultate für Schlüsselwort <b>{}</b>:<br />"
-
-#: plugins/lookup.py:71
-msgid "<br />Row {}: "
-msgstr "<br />Zeile {}: "
-
-#: plugins/lookup.py:82
-#, python-brace-format
-msgid "<br />{0} rows found. Only returning first {1}."
-msgstr "<br />{0} Zeilen gefunden. Zeige nur die ersten {1}."
-
-#: plugins/lookup.py:84
-#, python-brace-format
-msgid "<br />Hint: Use <b>/bot lookup <{0} {1}</b> to view {0} rows"
-msgstr "<br />Tipp: Benutze <b>/bot lookup <{0} {1}</b> um {0} Zeilen zu sehen"
-
-#: plugins/lookup.py:87
-msgid "No match found"
-msgstr "Kein Treffer gefunden"
-
-#: plugins/lottery.py:98
-msgid "prepare: min and max are the same ({})"
-msgstr "prepare: min und max sind gleich gross ({})"
-
-#: plugins/lottery.py:116
-msgid "prepare: unrecognised match (!csv, !range, !numberToken): {}"
-msgstr "prepare: Treffer nicht erkannt (!csv, !range, !numberToken): {}"
-
-#: plugins/lottery.py:122
+#: hangupsbot/plugins/restrictedadd.py:21
 msgid ""
-"Wow! Too many items to draw in <b>{}</b> lottery. Try {} items or less..."
+"add supplied user id as a botkeeper.\n"
+"botkeepers are allowed to add bots into a conversation and their continued "
+"presence in a conversation keeps the bot from leaving."
 msgstr ""
-"Wow! Zuviele Zahlen für eine <b>{}er</b> Lotterie. Versuch {} oder weniger..."
 
-#: plugins/lottery.py:127
+#: hangupsbot/plugins/restrictedadd.py:26
 msgid ""
-"The <b>{}</b> lottery is ready: {} items loaded and shuffled into the box."
-msgstr ""
-"Die <b>{}</b> Lotterie ist bereit: {} Objekte geladen und in die Kiste "
-"gemischt."
-
-#: plugins/lottery.py:129
-msgid "prepare: {} was initialised empty"
-msgstr "prepare: {} wurde leer initialisiert"
-
-#: plugins/lottery.py:177
-msgid "<b>{}</b>, you have already drawn <b>{}</b> from the <b>{}</b> box"
-msgstr "<b>{}</b>, du hast bereits <b>{}</b> von der <b>{}</b> Kiste gezogen"
-
-#: plugins/lottery.py:186
-msgid "<b>{}</b> draws <b>{}</b> from the <b>{}</b> box. "
-msgstr "<b>{}</b> zieht <b>{}</b>aus der <b>{}</b> Kiste. "
-
-#: plugins/lottery.py:188
-msgid "...AAAAAND its all gone! The <b>{}</b> lottery is over folks."
-msgstr "...UUUUUND alles ist weg! Die <b>{}</b> Lotterie ist vorbei Leute."
-
-#: plugins/lottery.py:194
-msgid "<b>{}</b>, the <b>{}</b> lottery is over. "
-msgstr "<b>{}</b>, die <b>{}</b> Lotterie ist beendet. "
-
-#: plugins/lottery.py:197
-msgid "You drew a {} previously."
-msgstr "Du hast zuvor bereits {} gezogen."
-
-#: plugins/mentions.py:117
-msgid ""
-"<b>{}</b>, you cannot @mention anyone until your DND status is toggled off."
-msgstr ""
-"<b>{}</b>, Du kannst niemanden @mention bis dein DND Status wieder "
-"ausgeschaltet ist."
-
-#: plugins/mentions.py:127
-msgid "<b>{}</b> cannot @mention anyone until they say something to me first."
-msgstr "<b>{}</b> kann niemanden @mention bis sie etwas zu mir gesagt haben."
-
-#: plugins/mentions.py:168
-msgid "You are not allowed to mention all users in <b>{}</b>"
+"remove supplied user id as a botkeeper.\n"
+"botkeepers are allowed to add bots into a conversation and their continued "
+"presence in a conversation keeps the bot from leaving.\n"
+"warning: removing a botkeeper may cause the bot to leave conversations where "
+"the current botkeeper is present, if no other botkeepers are present."
 msgstr ""
 
-#: plugins/mentions.py:173
-msgid "<b>{}</b> blocked from mentioning all users"
-msgstr ""
-
-#: plugins/mentions.py:272
-msgid ""
-"{} users would be mentioned with \"@{}\"! Be more specific. List of matching "
-"users:<br />"
-msgstr ""
-"{} Personen werden erwähnt mit \"@{}\"! Sei genauer. Liste passender "
-"Personen:<br />"
-
-#: plugins/mentions.py:307
-msgid "{} mentioned you in {}"
-msgstr "{} hat Dich in {} erwähnt"
-
-#: plugins/mentions.py:332
-msgid "<b>{}</b> @mentioned ALL in <i>{}</i>:<br />{}"
-msgstr ""
-
-#: plugins/mentions.py:334
-msgid "<b>{}</b> @mentioned you in <i>{}</i>:<br />{}"
-msgstr "<b>{}</b> @mentioned Dich in <i>{}</i>:<br />{}"
-
-#: plugins/mentions.py:350
-msgid ""
-"@mention didn't work for <b>{}</b>. User must say something to me first."
-msgstr ""
-"@mention hat nicht geklappt für <b>{}</b>. User muss zuerst etwas zu mir "
-"sagen."
-
-#: plugins/mentions.py:355
-msgid "<b>@mentions:</b><br />"
-msgstr "<b>@Erwähnungen:</b><br />"
-
-#: plugins/mentions.py:357
-msgid "1-to-1 fail: <i>{}</i><br />"
-msgstr "1-zu-1 fehlgeschlagen: <i>{}</i><br />"
-
-#: plugins/mentions.py:359
-msgid "PushBullet fail: <i>{}</i><br />"
-msgstr "PushBullet fehlgeschlagen: <i>{}</i><br />"
-
-#: plugins/mentions.py:361
-msgid "Ignored (DND): <i>{}</i><br />"
-msgstr "Ignoriert (DND): <i>{}</i><br />"
-
-#: plugins/mentions.py:363
-msgid "Alerted: <i>{}</i><br />"
-msgstr "Benachrichtigt: <i>{}</i><br />"
-
-#: plugins/mentions.py:365
-msgid "Nobody was successfully @mentioned ;-(<br />"
-msgstr "Niemand wurde erfoglreich erwähnt ;-(<br />"
-
-#: plugins/mentions.py:368
-msgid "Users failing 1-to-1 need to say something to me privately first.<br />"
-msgstr ""
-"User die 1-to-1 nicht benutzen können müssen mir zuerst eine private "
-"Nachricht schicken.<br />"
-
-#: plugins/mentions.py:384
-msgid "deactivating pushbullet integration"
-msgstr "Deaktiviere pushbullet-Integration"
-
-#: plugins/mentions.py:388
-msgid "setting pushbullet api key"
-msgstr "Setze pushbullet API key"
-
-#: plugins/mentions.py:396
-msgid "pushbullet configuration not changed"
-msgstr "pushbullet Konfiguration nicht geändert"
-
-#: plugins/mentions.py:412
-msgid "<em>\"be more specific\" for mentions toggled ON</em>"
-msgstr "<em>\"Sei genauer\" für mentions EINgeschaltet</em>"
-
-#: plugins/mentions.py:416
-msgid "<em>\"be more specific\" for mentions toggled OFF</em>"
-msgstr "<em>\"Sei genauer\" für mentions AUSgeschaltet</em>"
-
-#: plugins/mentions.py:435
-msgid ""
-"Error: Minimum length of nickname is {} characters. Only alphabetical and "
-"numeric characters allowed."
-msgstr ""
-"Fehler: Minimale Länge eines Nicknames ist {} Zeichen. Nur alphabetische und "
-"numerische Zeichen erlaubt."
-
-#: plugins/mentions.py:473
-msgid "<i>Your nickname is already <b>`{}`</b></i>"
-msgstr ""
-
-#: plugins/mentions.py:478
-msgid "<i>Nickname <b>`{}`</b> is already in use by another user"
-msgstr ""
-
-#: plugins/mentions.py:497
-msgid "Removing nickname"
-msgstr "Entferne Nickname"
-
-#: plugins/mentions.py:501
-msgid "Setting nickname to '{}'"
-msgstr "Setze Nickname auf '{}'"
-
-#: plugins/monitoradds.py:52
-#, python-brace-format
-msgid ""
-"<b>!!! WARNING !!!</b><br /><br /><b>{0}</b> invited <b>{1}</b> without "
-"authorization.<br /><br /><b>{1}</b>: Please leave this hangout and ask a "
-"moderator to add you. Thank you for your understanding."
-msgstr ""
-
-#: plugins/monitoradds.py:69 plugins/monitoradds.py:74
-msgid "<i>Moderators updated: {} added</i>"
-msgstr "<i>Moderatoren aktualisiert: {} hinzugefügt</i>"
-
-#: plugins/monitoradds.py:90
-msgid "<i>Moderators updated: {} removed</i>"
-msgstr "<i>Moderatoren aktualisiert: {} entfernt</i>"
-
-#: plugins/namelock.py:71
-msgid "Removing topic"
-msgstr "Entferne Thema"
-
-#: plugins/namelock.py:75
-msgid "Setting topic to '{}'"
-msgstr "Setze Thema auf '{}'"
-
-#: plugins/remind.py:15
-msgid "Usage: /bot remindme <b>delay (minutes)</b> <i>Message</i>"
-msgstr ""
-
-#: plugins/remind.py:20
-msgid "Private reminder for <b>{}</b> in {}m"
-msgstr ""
-
-#: plugins/remind.py:23 plugins/remind.py:43
-msgid "<b>Reminder:</b>  "
-msgstr ""
-
-#: plugins/remind.py:25 plugins/remind.py:45
-msgid "Error creating reminder, invalid delay"
-msgstr ""
-
-#: plugins/remind.py:36
-msgid "Usage: /bot remindall <b>delay (minutes)</b> <i>Message</i>"
-msgstr ""
-
-#: plugins/remind.py:41
-msgid "Public reminder in {}m"
-msgstr ""
-
-#: plugins/restrictedadd.py:72
+#: hangupsbot/plugins/restrictedadd.py:89
 msgid ""
 "<i>{}, you need to be authorised to add me to another conversation. I'm "
 "leaving now...</i>"
@@ -872,144 +670,1574 @@ msgstr ""
 "<i>{}, Du musst authorisiert sein um mich zu einer anderen Unterhaltung "
 "hinzuzufügen. Ich gehe jetzt...</i>"
 
-#: plugins/restrictedadd.py:117
+#: hangupsbot/plugins/restrictedadd.py:135
 msgid "<i>There is no botkeeper in here. I have to go...</i>"
 msgstr "<i>Kein botkeeper hier drin. Ich muss gehen...</i>"
 
-#: plugins/restrictedadd.py:141
+#: hangupsbot/plugins/restrictedadd.py:159
 msgid "user id {} added as botkeeper"
 msgstr "Benutzer ID {} als botkeeper hinzugefügt"
 
-#: plugins/restrictedadd.py:163
+#: hangupsbot/plugins/restrictedadd.py:178
 msgid "user id {} removed as botkeeper"
 msgstr "Benutzer ID {} als botkeeper entfernt"
 
-#: plugins/restrictedadd.py:172
+#: hangupsbot/plugins/restrictedadd.py:179
 msgid "user id {} is not authorised"
 msgstr "Benutzer ID {} ist nicht authorisiert"
 
-#: plugins/showme/__init__.py:59
+#: hangupsbot/plugins/default.py:16
+msgid ""
+"echo back a given text into a conversation\n"
+"to echo into an other conversation provide a conv_id a the first argument"
+msgstr ""
+
+#: hangupsbot/plugins/default.py:19
+#, python-brace-format
+msgid ""
+"broadcast a message to conversations\n"
+"{bot_cmd} broadcast [info|message|add|remove|NOW]"
+msgstr ""
+
+#: hangupsbot/plugins/default.py:22
+msgid "list all users in the current hangout with their G+IDs"
+msgstr ""
+
+#: hangupsbot/plugins/default.py:24
+msgid "list all hangouts, supply keywords to filter by title"
+msgstr ""
+
+#: hangupsbot/plugins/default.py:26
+msgid "rename current hangout"
+msgstr ""
+
+#: hangupsbot/plugins/default.py:28
+msgid "exits current or other specified hangout"
+msgstr ""
+
+#: hangupsbot/plugins/default.py:30
+msgid "reload config and memory, useful if manually edited on running bot"
+msgstr ""
+
+#: hangupsbot/plugins/default.py:33
+msgid "stop running"
+msgstr ""
+
+#: hangupsbot/plugins/default.py:36
+#, python-brace-format
+msgid ""
+"displays or modifies the configuration\n"
+"* {bot_cmd} config get [key] [subkey] [...]\n"
+"* {bot_cmd} config set [key] [subkey] [...] [value]\n"
+"* {bot_cmd} config append [key] [subkey] [...] [value]\n"
+"* {bot_cmd} config remove [key] [subkey] [...] [value]\n"
+"\n"
+"note: override and display within group conversation with {bot_cmd} config "
+"here [command]"
+msgstr ""
+
+#: hangupsbot/plugins/default.py:44
+msgid "get your user id"
+msgstr ""
+
+#: hangupsbot/plugins/default.py:46
+msgid "get current conversation id"
+msgstr ""
+
+#: hangupsbot/plugins/default.py:73
+msgid "supply a message!"
+msgstr ""
+
+#: hangupsbot/plugins/default.py:85
+msgid "<b>only admins can echo other conversations</b>"
+msgstr ""
+
+#: hangupsbot/plugins/default.py:110
+msgid "Your request is missing"
+msgstr ""
+
+#: hangupsbot/plugins/default.py:121
+msgid "broadcast: no message set"
+msgstr "broadcast: es wurde keine Nachricht gesendet"
+
+#: hangupsbot/plugins/default.py:124
+msgid "broadcast: no conversations available"
+msgstr "broadcast: keine Konversationen verfügbar"
+
+#: hangupsbot/plugins/default.py:127
+msgid "<b>message:</b>"
+msgstr ""
+
+#: hangupsbot/plugins/default.py:128
+msgid "<b>to:</b>"
+msgstr ""
+
+#: hangupsbot/plugins/default.py:136
+msgid "{} saved"
+msgstr ""
+
+#: hangupsbot/plugins/default.py:139
+msgid "broadcast: message must be supplied after subcommand"
+msgstr "broadcast: Nachricht muss nach dem Sub-Befehl mitgegeben werden"
+
+#: hangupsbot/plugins/default.py:163
+#, python-brace-format
+msgid "broadcast: {conv_count} conversation(s)"
+msgstr ""
+
+#: hangupsbot/plugins/default.py:170
+msgid "broadcast: cleared all conversations"
+msgstr ""
+
+#: hangupsbot/plugins/default.py:181
+#, python-brace-format
+msgid "<b><i>{name}</i></b> (<i>{conv_id}</i>)"
+msgstr ""
+
+#: hangupsbot/plugins/default.py:185
+#, python-brace-format
+msgid "broadcast: removed {conv_tags}"
+msgstr ""
+
+#: hangupsbot/plugins/default.py:195
+#, python-brace-format
+msgid "broadcast: message sent to {conv_count} chats"
+msgstr ""
+
+#: hangupsbot/plugins/default.py:215
+msgid "supply search term"
+msgstr ""
+
+#: hangupsbot/plugins/default.py:220
+msgid "results for user named \"{}\":"
+msgstr "Ergebnisse für User namens \"{}\":"
+
+#: hangupsbot/plugins/default.py:277
+#, python-brace-format
+msgid "<b>Total: {lines_num}</b>"
+msgstr ""
+
+#: hangupsbot/plugins/default.py:280
+#, python-brace-format
+msgid "<b>List of hangouts matching:</b> \"<i>{term}</i>\""
+msgstr ""
+
+#: hangupsbot/plugins/default.py:385
+msgid "<i>note: testing single parameter as json</i>"
+msgstr ""
+
+#: hangupsbot/plugins/default.py:452
+msgid "append failed on non-list"
+msgstr "Hinzufügen schlug fehl, keine passende Liste angegeben"
+
+#: hangupsbot/plugins/default.py:463
+msgid "remove failed on non-list"
+msgstr "Entfernen schlug fehl, keine passende Liste angegeben"
+
+#: hangupsbot/plugins/default.py:473
+msgid "Parameter does not exist!"
+msgstr "Parameter existiert nicht!"
+
+#: hangupsbot/plugins/default.py:502
+#, python-brace-format
+msgid "<b><i>{fullname}</i></b>, chat_id = <i>{chat_id}</i>"
+msgstr ""
+
+#: hangupsbot/plugins/default.py:517
+#, python-brace-format
+msgid "You are at <b><i>{conv_name}</i></b>, conv_id = <i>{conv_id}</i>"
+msgstr ""
+
+#: hangupsbot/plugins/showme/__init__.py:46
+#, python-brace-format
+msgid ""
+"Retrieve images from showme sources by saying:\n"
+" {bot_cmd} showme SOURCE\n"
+"list sources by saying:\n"
+" {bot_cmd} showme sources\n"
+"or all sources by saying\n"
+" {bot_cmd} showme all"
+msgstr ""
+
+#: hangupsbot/plugins/showme/__init__.py:89
 msgid "I'm sorry, I couldn't upload a {} image"
 msgstr ""
 
-#: plugins/showme/__init__.py:67
+#: hangupsbot/plugins/showme/__init__.py:107
 msgid "Show you what?"
 msgstr ""
 
-#: plugins/showme/__init__.py:77
+#: hangupsbot/plugins/showme/__init__.py:117
 msgid "I don't know a \"{}\", try sources"
 msgstr ""
 
-#: plugins/simplewikipedia.py:20
-msgid "<i>source: <a href=\"{}\">{}</a></i>"
-msgstr "<i>Quelle: <a href=\"{}\">{}</a></i>"
+#: hangupsbot/plugins/remind.py:9
+#, python-brace-format
+msgid ""
+"Posts a custom message to a 1on1 after a delay\n"
+"Usage: {bot_cmd} remindme <b><delay (minutes)></b> <i>Message</i>\n"
+"example: {bot_cmd} remindme 5 The 5 Minutes are OVER"
+msgstr ""
 
-#: plugins/simplewikipedia.py:24
-msgid "<i>no entry found for {}</i>"
-msgstr "<i>Kein Eintrag gefunden für {}</i>"
+#: hangupsbot/plugins/remind.py:13
+#, python-brace-format
+msgid ""
+"Posts a custom message to the chat after a delay\n"
+"Usage: {bot_cmd} remindall <b><delay (minutes)></b> <i>Message</i>\n"
+"example: {bot_cmd} remindall 5 The 5 Minutes are OVER"
+msgstr ""
 
-#: plugins/spotify.py:85
+#: hangupsbot/plugins/remind.py:36
+msgid "specify delay and message"
+msgstr ""
+
+#: hangupsbot/plugins/remind.py:41
+#, python-format
+msgid "invalid delay \"%s\" given, integer or float required"
+msgstr ""
+
+#: hangupsbot/plugins/remind.py:62
+#, python-format
+msgid "%s, chat with me in a private chat first"
+msgstr ""
+
+#: hangupsbot/plugins/remind.py:66
+msgid "Private reminder for <b>{}</b> in {}m"
+msgstr ""
+
+#: hangupsbot/plugins/remind.py:86
+msgid "Public reminder in {}m"
+msgstr ""
+
+#: hangupsbot/plugins/remind.py:102
+msgid "<b>Reminder:</b> "
+msgstr ""
+
+#: hangupsbot/plugins/lookup/__init__.py:11
+msgid "find keywords in a specified spreadsheet"
+msgstr ""
+
+#: hangupsbot/plugins/lookup/__init__.py:23
+msgid "Spreadsheet function disabled"
+msgstr "Funktion für Tabellenkalkulation deaktiviert"
+
+#: hangupsbot/plugins/lookup/__init__.py:26
+msgid "Spreadsheet URL not set"
+msgstr "URL für Tabellenkalkulation nicht gesetzt"
+
+#: hangupsbot/plugins/lookup/__init__.py:38
+msgid "Results for keyword <b>{}</b>:\n"
+msgstr ""
+
+#: hangupsbot/plugins/lookup/__init__.py:50
+msgid "lookup: request failed :("
+msgstr ""
+
+#: hangupsbot/plugins/lookup/__init__.py:80
+msgid ""
+"\n"
+"Row {}: "
+msgstr ""
+
+#: hangupsbot/plugins/lookup/__init__.py:91
+#, python-brace-format
+msgid ""
+"\n"
+"{0} rows found. Only returning first {1}."
+msgstr ""
+
+#: hangupsbot/plugins/lookup/__init__.py:93
+#, python-brace-format
+msgid ""
+"\n"
+"Hint: Use <b>/bot lookup <{0} {1}</b> to view {0} rows"
+msgstr ""
+
+#: hangupsbot/plugins/lookup/__init__.py:96
+msgid "No match found"
+msgstr "Kein Treffer gefunden"
+
+#: hangupsbot/plugins/twitter/__init__.py:20
+msgid ""
+"Set your Twitter API Secret.\n"
+"Get one from https://apps.twitter.com/app"
+msgstr ""
+
+#: hangupsbot/plugins/twitter/__init__.py:23
+msgid ""
+"Set your Twitter API Key.\n"
+"Get one from https://apps.twitter.com/"
+msgstr ""
+
+#: hangupsbot/plugins/twitter/__init__.py:26
+msgid ""
+"Get your Twitter credentials. Remember that these are meant to be kept "
+"secret!"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/__init__.py:22
+#, python-brace-format
+msgid ""
+"usage:\n"
+"{bot_cmd} telesync add <telegram chat id>\n"
+"    sync the current chat with the given telegram chat\n"
+"{bot_cmd} telesync remove <\"all\"|<telegram chat ids>>\n"
+"    disable the sync to previously configured telegram chats - \"all\" may "
+"remove all syncs, space separated chat ids may remove only the specified "
+"chats\n"
+"{bot_cmd} telesync show\n"
+"    show current sync targets\n"
+"add \"channel\" to a request to setup a channel sync, which does not sync "
+"the senders' name"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/__init__.py:32
+#, python-brace-format
+msgid ""
+"usage:\n"
+"{bot_cmd} telesync_set_token <api_key>\n"
+"update the api key for the telesync plugin"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/__init__.py:126
+#, python-brace-format
+msgid "Hello {name}! You are talking to @{botusername}, known as {botname}."
+msgstr ""
+
+#: hangupsbot/plugins/telesync/__init__.py:231
+#, python-format
+msgid "HO -> TG: \"%s\" is already target"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/__init__.py:235
+#, python-format
+msgid "HO -> TG: target \"%s\" added"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/__init__.py:243
+#, python-format
+msgid "HO <- TG: channel sync from \"%s\" already set"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/__init__.py:244
+#, python-format
+msgid "HO <- TG: sync from \"%s\" already set"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/__init__.py:248
+#, python-format
+msgid "HO <- TG: channel sync from \"%s\" added"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/__init__.py:249
+#, python-format
+msgid "HO <- TG: sync from \"%s\" added"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/__init__.py:257
+msgid "all"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/__init__.py:262
+#, python-format
+msgid "HO -> TG: target \"%s\" removed"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/__init__.py:264
+#, python-format
+msgid "HO -> TG: target \"%s\" not set"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/__init__.py:272
+#, python-format
+msgid "HO <- TG: channel sync removed from \"%s\""
+msgstr ""
+
+#: hangupsbot/plugins/telesync/__init__.py:273
+#, python-format
+msgid "HO <- TG: sync removed from \"%s\""
+msgstr ""
+
+#: hangupsbot/plugins/telesync/__init__.py:276
+#, python-format
+msgid "HO <- TG: channel sync not set from \"%s\""
+msgstr ""
+
+#: hangupsbot/plugins/telesync/__init__.py:277
+#, python-format
+msgid "HO <- TG: sync not set from \"%s\""
+msgstr ""
+
+#: hangupsbot/plugins/telesync/__init__.py:284
+msgid "no chats"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/__init__.py:285
+#, python-brace-format
+msgid "syncing \"{conv_id}\" to {tg_ids}"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/__init__.py:290
+#: hangupsbot/plugins/telesync/__init__.py:307
+msgid "show"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/__init__.py:291
+#: hangupsbot/plugins/telesync/__init__.py:293
+#: hangupsbot/plugins/telesync/commands_tg.py:193
+#: hangupsbot/plugins/telesync/commands_tg.py:195
+#: hangupsbot/plugins/telesync/commands_tg.py:240
+#: hangupsbot/plugins/telesync/commands_tg.py:242
+msgid "oneway"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/__init__.py:292
+#: hangupsbot/plugins/telesync/__init__.py:293
+#: hangupsbot/plugins/telesync/commands_tg.py:194
+#: hangupsbot/plugins/telesync/commands_tg.py:195
+#: hangupsbot/plugins/telesync/commands_tg.py:241
+#: hangupsbot/plugins/telesync/commands_tg.py:242
+msgid "channel"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/__init__.py:374
+msgid ""
+"<i>Your profiles are connected and you will not receive my messages in "
+"Telegram</i>"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/__init__.py:382
+msgid ""
+"<i>Your profiles are connected and you will receive my messages in Telegram "
+"as well.</i>"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:58
+msgid "This command is admin-only!"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:74
+msgid ""
+"Issue again in a private chat:\n"
+"Tap on my name then hit the message icon"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:97
+msgid "Check arguments."
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:128
+msgid "canceled"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:142
+#, python-format
+msgid "Your Telegram user id is '%s'"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:155
+msgid "This chat has the id '{}'"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:174
+#, python-brace-format
+msgid "User <i>{name}</i> has the id \"{tg_id}\""
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:178
+#, python-format
+msgid "Could not find a user matching \"%s\""
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:208
+msgid "TG -> HO: target '{}' already set"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:211
+msgid "TG -> HO: target '{}' added"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:217
+msgid "TG <- HO: sync already set"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:219
+msgid "TG <- HO: chat added"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:258
+#, python-format
+msgid "TG -> HO: target \"%s\" removed"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:260
+#, python-format
+msgid "TG -> HO: \"%s\" was not a target"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:267
+#, python-format
+msgid "TG <- HO: chat removed from \"%s\""
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:271
+#, python-format
+msgid "TG <- HO: chat was no target of \"%s\""
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:277
+msgid "No syncs to clear found"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:300
+msgid "User added to admins"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:302
+msgid "User is already an admin"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:325
+msgid "User removed from admins"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:327
+msgid "User is not an admin"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:371
+msgid ""
+"Your profile is already linked to a G+Profile, use /unsyncprofile to unlink "
+"your profiles"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:411
+msgid "Telegram and G+Profile are no more linked."
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:418
+#: hangupsbot/plugins/slackrtm/commands_slack.py:311
+msgid "Profilesync canceled."
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:421
+msgid ""
+"There is no G+Profile connected to your Telegram Profile.\n"
+"Use /syncprofile to connect one"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:464
+msgid "<b>Telegram Botadmins:</b>"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:551
+msgid "Sorry, but I am not able to leave this chat on my own."
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:585
+msgid "unknown"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:607
+msgid "You may now copy and paste the next message and edit the current value"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:627
+msgid "available config entrys:"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:635
+msgid "available Telegram Chats:"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:659
+#, python-brace-format
+msgid ""
+"{sync_option} updated for channel \"{tg_id}\" from \"{old}\" to \"{new}\""
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:683
+msgid "This command can be issued in supergroups only"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:688
+#, python-brace-format
+msgid ""
+"Check syntax:\n"
+"/restrict_user <ids | all> <\"{options}\">"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:703
+#, python-format
+msgid ""
+"The user %s is not member of the current chat or has not written anything so "
+"far in here."
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:712
+msgid "/restrict_users failed for:"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:719
+msgid "/restrict_users finished successful"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:755
+#, python-format
+msgid "Processing the queue of /restrict_users for %s users."
+msgstr ""
+
+#: hangupsbot/plugins/telesync/commands_tg.py:764
+#, python-brace-format
+msgid "Finished {completed}/{num_all} requests for /restrict_users"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/core.py:336
+msgid "<b> [ REMINDER ] </b>\n"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/core.py:343
+#, python-brace-format
+msgid ""
+"<b>Please send me one of the messages below</b> <a href=\"https://hangouts."
+"google.com/chat/person/{bot_id}\">in Hangouts</a>:\n"
+"Note: The message must start with <b>{bot_cmd}</b>, otherwise I do not "
+"process your message as a command and ignore your message.\n"
+"If you copy the message below, Telegram might add <b>{name}:</b> to my "
+"message. Just delete that until the message starts with <b>{bot_cmd}</b>.\n"
+"Our private Hangout and this chat will be automatically synced. You can then "
+"receive mentions and other messages I only send to private Hangouts. Use "
+"<i>split</i>  next to the token to block this sync.\n"
+"Use /unsyncprofile to cancel the process."
+msgstr ""
+
+#: hangupsbot/plugins/telesync/message.py:117
+msgid "DM - {}"
+msgstr ""
+
+#: hangupsbot/plugins/telesync/message.py:186
+msgid "Last live update: "
+msgstr ""
+
+#: hangupsbot/plugins/telesync/message.py:188
+msgid "Live update: "
+msgstr ""
+
+#: hangupsbot/plugins/host/__init__.py:52
+msgid ""
+"enable/disable system load reporting above an average 1 load per core into "
+"the current conv\n"
+"\n"
+"<i>The threshold can be set manually to a different value:\n"
+"  set \"load_threshold\" in your config to a custom value</i>"
+msgstr ""
+
+#: hangupsbot/plugins/host/__init__.py:58
+msgid ""
+"enable/disable sending of a message into the current conv on bot reboot\n"
+"<i>datadog: toggles the periodic reporting of an online state of the bot to "
+"datadog - this requires an active datadog service</i>"
+msgstr ""
+
+#: hangupsbot/plugins/host/__init__.py:63
+msgid "post the current sytem uptime in our private chat"
+msgstr ""
+
+#: hangupsbot/plugins/host/__init__.py:65
+msgid "list current ssh-session on the host in our private chat"
+msgstr ""
+
+#: hangupsbot/plugins/host/__init__.py:109
+#: hangupsbot/plugins/host/__init__.py:300
+msgid "bot_name"
+msgstr ""
+
+#: hangupsbot/plugins/host/__init__.py:160
+msgid "Notifications "
+msgstr ""
+
+#: hangupsbot/plugins/host/__init__.py:164
+msgid "disabled"
+msgstr ""
+
+#: hangupsbot/plugins/host/__init__.py:167
+msgid "enabled"
+msgstr ""
+
+#: hangupsbot/plugins/host/__init__.py:229
+msgid "user"
+msgstr ""
+
+#: hangupsbot/plugins/host/__init__.py:229
+msgid "terminal"
+msgstr ""
+
+#: hangupsbot/plugins/host/__init__.py:229
+msgid "host"
+msgstr ""
+
+#: hangupsbot/plugins/host/__init__.py:229
+msgid "session-time"
+msgstr ""
+
+#: hangupsbot/plugins/host/__init__.py:279
+#, python-brace-format
+msgid "{name} is back up"
+msgstr ""
+
+#: hangupsbot/plugins/host/__init__.py:295
+#, python-brace-format
+msgid ""
+"HangupsBot using user https://plus.google.com/{chat_id}\n"
+"started on {startup}"
+msgstr ""
+
+#: hangupsbot/plugins/host/__init__.py:312
+#, python-brace-format
+msgid "{name} is going down"
+msgstr ""
+
+#: hangupsbot/plugins/metar/__init__.py:20
+#, python-brace-format
+msgid ""
+"Display the current METAR weather report for the supplied ICAO airport "
+"code.\n"
+" <b>{bot_cmd} metar <ICAO airport code></b>\n"
+"ICAO Airport Codes: https://en.wikipedia.org/wiki/"
+"International_Civil_Aviation_Organization_airport_code\n"
+"METAR source: http://aviationweather.gov"
+msgstr ""
+
+#: hangupsbot/plugins/metar/__init__.py:27
+#, python-brace-format
+msgid ""
+"Looks up the most recent TAF weather forecast for the supplied ICAO airport "
+"code.\n"
+" <b>{bot_cmd} taf <ICAO airport code></b>\n"
+"ICAO Airport Codes: https://en.wikipedia.org/wiki/"
+"International_Civil_Aviation_Organization_airport_code\n"
+"TAF source: http://aviationweather.gov"
+msgstr ""
+
+#: hangupsbot/plugins/metar/__init__.py:59
+msgid ""
+"You need to enter the ICAO airport code you wish the look up,https://en."
+"wikipedia.org/wiki/International_Civil_Aviation_Organization_airport_code"
+msgstr ""
+
+#: hangupsbot/plugins/metar/__init__.py:65
+msgid "There was an error retrieving the METAR information."
+msgstr ""
+
+#: hangupsbot/plugins/metar/__init__.py:67
+msgid ""
+"The response did not contain METAR information, check the ICAO airport code "
+"and try again."
+msgstr ""
+
+#: hangupsbot/plugins/metar/__init__.py:76
+msgid ""
+"You need to enter the ICAO airport code you wish the look up, https://en."
+"wikipedia.org/wiki/International_Civil_Aviation_Organization_airport_code"
+msgstr ""
+
+#: hangupsbot/plugins/metar/__init__.py:82
+msgid "There was an error retrieving the TAF information."
+msgstr ""
+
+#: hangupsbot/plugins/metar/__init__.py:84
+msgid ""
+"The response did not contain TAF information, check the ICAO airport code "
+"and try again."
+msgstr ""
+
+#: hangupsbot/plugins/lottery.py:13
+msgid ""
+"prepares a bundle of \"things\" for a random lottery.\n"
+"parameter: optional \"things\", draw definitions.\n"
+"if \"things\" is not specified, \"default\" will be used.\n"
+"draw definitions can be a simple range such as 1-8; a specific list of "
+"things to draw such as <i>a,b,c,d,e</i> ; or a shorthand list such as "
+"<i>2abc1xyz (which prepares list abc,abc,xyz)</i> .\n"
+"any user can draw once from the default lottery with command <i>/me draws</"
+"i> .\n"
+"if multiple lotteries (non-default) are active, the user should use: <i>/me "
+"draws a \"thing\"</i> .\n"
+"special keywords for draw definitions: COMPASS creates a list based on the "
+"cardinal and ordinal directions."
+msgstr ""
+
+#: hangupsbot/plugins/lottery.py:27
+#, python-brace-format
+msgid ""
+"draw handling:\n"
+"<i>/me draw[s] [a[n]] number[s]</i>\n"
+"  draws from \"number\", \"numbers\" or \"numberes\"<i>/me draw[s] [a[n]] "
+"sticks[s]</i>\n"
+"  draws from \"stick\", \"sticks\" or \"stickses\"\n"
+"<i>/me draws[s]<unrecognised></i>\n"
+"  draws from \"default\"\n"
+"\n"
+"note: to prepare lotteries/drawings, see <b>{bot_cmd} prepare ...</b>"
+msgstr ""
+
+#: hangupsbot/plugins/lottery.py:114
+msgid "prepare: min and max are the same ({})"
+msgstr "prepare: min und max sind gleich gross ({})"
+
+#: hangupsbot/plugins/lottery.py:132
+msgid "prepare: unrecognised match (!csv, !range, !numberToken): {}"
+msgstr "prepare: Treffer nicht erkannt (!csv, !range, !numberToken): {}"
+
+#: hangupsbot/plugins/lottery.py:136
+msgid ""
+"Wow! Too many items to draw in <b>{}</b> lottery. Try {} items or less..."
+msgstr ""
+"Wow! Zuviele Zahlen für eine <b>{}er</b> Lotterie. Versuch {} oder weniger..."
+
+#: hangupsbot/plugins/lottery.py:139
+msgid ""
+"The <b>{}</b> lottery is ready: {} items loaded and shuffled into the box."
+msgstr ""
+"Die <b>{}</b> Lotterie ist bereit: {} Objekte geladen und in die Kiste "
+"gemischt."
+
+#: hangupsbot/plugins/lottery.py:141
+msgid "prepare: {} was initialised empty"
+msgstr "prepare: {} wurde leer initialisiert"
+
+#: hangupsbot/plugins/lottery.py:183
+msgid "<b>{}</b>, you have already drawn <b>{}</b> from the <b>{}</b> box"
+msgstr "<b>{}</b>, du hast bereits <b>{}</b> von der <b>{}</b> Kiste gezogen"
+
+#: hangupsbot/plugins/lottery.py:192
+msgid "<b>{}</b> draws <b>{}</b> from the <b>{}</b> box. "
+msgstr "<b>{}</b> zieht <b>{}</b>aus der <b>{}</b> Kiste. "
+
+#: hangupsbot/plugins/lottery.py:194
+msgid "...AAAAAND its all gone! The <b>{}</b> lottery is over folks."
+msgstr "...UUUUUND alles ist weg! Die <b>{}</b> Lotterie ist vorbei Leute."
+
+#: hangupsbot/plugins/lottery.py:200
+msgid "<b>{}</b>, the <b>{}</b> lottery is over. "
+msgstr "<b>{}</b>, die <b>{}</b> Lotterie ist beendet. "
+
+#: hangupsbot/plugins/lottery.py:203
+msgid "You drew a {} previously."
+msgstr "Du hast zuvor bereits {} gezogen."
+
+#: hangupsbot/plugins/syncrooms_config.py:10
+msgid ""
+"attach conversations to a new/existing syncout group.\n"
+"supply list of conversation ids to attach. supplying an id that is not the "
+"current conversation will make the bot attempt to attach the current "
+"conversation to the specified id. if the id does not already exist in "
+"another syncout group, a new syncout will be created consisting of the "
+"current conversation and the specified id. if more than conversation id is "
+"supplied, the bot will attempt to attach all the conversation ids to an "
+"existing syncout provided at least one of the supplied ids is in an existing "
+"syncout. if all the conversation ids are new, then a new syncout will be "
+"created. append \"quietly\" to silently create/attach."
+msgstr ""
+
+#: hangupsbot/plugins/syncrooms_config.py:23
+msgid ""
+"detach current conversation from a syncout if no parameters supplied.\n"
+"if a conversation id is supplied, the bot will attempt to detach that "
+"conversation from an existing syncout"
+msgstr ""
+
+#: hangupsbot/plugins/syncrooms_config.py:80
+msgid "<i>syncout updated: {} conversations</i>"
+msgstr "<i>syncout: {} Unterhaltungen aktualisiert</i>"
+
+#: hangupsbot/plugins/syncrooms_config.py:83
+msgid "<i>syncout created: {} conversations</i>"
+msgstr "<i>syncout hat: {} Unterhaltungen erstellt</i>"
+
+#: hangupsbot/plugins/syncrooms_config.py:86
+msgid "<i>syncouts unchanged</i>"
+msgstr "<i>syncouts unverändert</i>"
+
+#: hangupsbot/plugins/syncrooms_config.py:124
+msgid "<i>`{}` was detached</i>"
+msgstr "<i>`{}` wurde losgelöst</i>"
+
+#: hangupsbot/plugins/urbandict/__init__.py:16
+msgid ""
+"lookup a term on Urban Dictionary. supplying no parameters will get you a "
+"random term.\n"
+"DISCLAIMER: all definitions are from http://www.urbandictionary.com/\n"
+"- the bot and its creators/maintainers take no responsibility for any hurt "
+"feelings."
+msgstr ""
+
+#: hangupsbot/plugins/urbandict/__init__.py:83
+msgid "urbandict: request failed :("
+msgstr ""
+
+#: hangupsbot/plugins/urbandict/__init__.py:97
+msgid "<b>definition:</b> "
+msgstr "<b>Definition:</b> "
+
+#: hangupsbot/plugins/urbandict/__init__.py:101
+msgid "<b>example:</b> "
+msgstr "<b>Beispiel:</b> "
+
+#: hangupsbot/plugins/urbandict/__init__.py:107
+msgid "<i>no urban dictionary definition for \"{}\"</i>"
+msgstr "<i>Keine Definition im urban dictionary für \"{}\"</i>"
+
+#: hangupsbot/plugins/urbandict/__init__.py:109
+msgid "<i>no term from urban dictionary</i>"
+msgstr "<i>Kein Begriff vom urban dictionary</i>"
+
+#: hangupsbot/plugins/_example/example_memory.py:22
+msgid "<b>{}</b>, remembered!"
+msgstr "<b>{}</b>, gemerkt!"
+
+#: hangupsbot/plugins/_example/example_memory.py:24
+msgid "<b>{}</b>, remembered something else!"
+msgstr "<b>{}</b>, etwas anderes gemerkt!"
+
+#: hangupsbot/plugins/_example/example_memory.py:33
+msgid "<b>{}</b>, nothing remembered!"
+msgstr "<b>{}</b>, nichts gemerkt!"
+
+#: hangupsbot/plugins/_example/example_memory.py:35
+msgid "<b>{}</b> asked me to remember <i>\"{}\"</i>"
+msgstr "<b>{}</b> bat mich mir <i>\"{}\"</i> zu merken"
+
+#: hangupsbot/plugins/_example/example_memory.py:44
+msgid "<b>{}</b>, nothing to forget!"
+msgstr "<b>{}</b>, nichts zu vergessen!"
+
+#: hangupsbot/plugins/_example/example_memory.py:47
+msgid "<b>{}</b>, forgotten!"
+msgstr "<b>{}</b>, vergessen!"
+
+#: hangupsbot/plugins/_example/example_memory.py:62
+msgid "<b>{}</b>, remembered for this conversation"
+msgstr "<b>{}</b>, wurde für diese Unterhaltung gemerkt"
+
+#: hangupsbot/plugins/_example/example_memory.py:64
+msgid "<b>{}</b>, remembered something else for this conversation!"
+msgstr "<b>{}</b>, für diese Unterhaltung wurde sich etwas anderes gemerkt!"
+
+#: hangupsbot/plugins/_example/example_memory.py:73
+msgid "<b>{}</b>, nothing remembered for this conversation!"
+msgstr "<b>{}</b>, für diese Unterhaltung wurde sich nichts gemerkt!"
+
+#: hangupsbot/plugins/_example/example_memory.py:75
+msgid "<b>{}</b> asked me to remember <i>\"{}\" for this conversation</i>"
+msgstr ""
+"<b>{}</b> bat mich, mich <i> in dieser Unterhaltung \"{}\" </i> zu merken"
+
+#: hangupsbot/plugins/_example/example_memory.py:84
+msgid "<b>{}</b>, nothing to forget for this conversation!"
+msgstr "<b>{}</b>, für diese Unterhaltung kann nichts vergessen werden!"
+
+#: hangupsbot/plugins/_example/example_memory.py:87
+msgid "<b>{}</b>, forgotten for this conversation!"
+msgstr "<b>{}</b>, für diese Unterhaltung vergessen!"
+
+#: hangupsbot/plugins/dnd.py:11
+#, python-brace-format
+msgid ""
+"allow users to toggle DND for ALL conversations (i.e. no @mentions)\n"
+"{bot_cmd} dnd [<timeout in hours>]\n"
+"example: <i>{bot_cmd} dnd 5</i>"
+msgstr ""
+
+#: hangupsbot/plugins/wolframalpha/__init__.py:25
+msgid "solve a question with wolfram alpha"
+msgstr ""
+
+#: hangupsbot/plugins/wolframalpha/__init__.py:63
+msgid "You need to ask WolframAlpha a question"
+msgstr ""
+
+#: hangupsbot/plugins/wolframalpha/__init__.py:74
+msgid "Bad request!"
+msgstr ""
+
+#: hangupsbot/plugins/wolframalpha/__init__.py:77
+msgid "Bad response from WolframAlpha, retry or change your query!"
+msgstr ""
+
+#: hangupsbot/plugins/wolframalpha/__init__.py:93
+#, python-format
+msgid "%s"
+msgstr ""
+
+#: hangupsbot/plugins/wolframalpha/__init__.py:103
+msgid "<i>Wolfram Alpha did not return any useful data</i>"
+msgstr "<i>Wolfram Alpha hat keine nützlichen Daten zurückgeliefert</i>"
+
+#: hangupsbot/plugins/tldr.py:16
+msgid ""
+"defines whether the tldr is sent as a private message or into the main chat"
+msgstr ""
+
+#: hangupsbot/plugins/tldr.py:20
+#, python-brace-format
+msgid ""
+"read and manage tldr entries for a given conversation\n"
+"\n"
+"- {bot_cmd} tldr <number>\n"
+"   retrieve a specific numbered entry\n"
+"- {bot_cmd} tldr <text>\n"
+"   add <text> as an entry\n"
+"- {bot_cmd} tldr edit <number> <text>\n"
+"   replace the specified entry with the new <text>\n"
+"- {bot_cmd} tldr clear <number>\n"
+"   clear specified numbered entry\n"
+"   <i>specialcase: {bot_cmd} tldr clear all\n"
+"     clear all entries</i>"
+msgstr ""
+
+#: hangupsbot/plugins/tldr.py:100
+msgid "<i>{}, I've sent you the info in a PM</i>"
+msgstr ""
+
+#: hangupsbot/plugins/tldr.py:153
+msgid "{}. {} <b>{} ago</b>"
+msgstr ""
+
+#: hangupsbot/plugins/tldr.py:158
+msgid "TL;DR not found."
+msgstr ""
+
+#: hangupsbot/plugins/tldr.py:161
+msgid "<b>TL;DR ({} stored):</b>"
+msgstr ""
+
+#: hangupsbot/plugins/tldr.py:162
+msgid "\n"
+msgstr ""
+
+#: hangupsbot/plugins/tldr.py:187 hangupsbot/plugins/tldr.py:209
+msgid "TL;DR #{} not found."
+msgstr ""
+
+#: hangupsbot/plugins/tldr.py:193
+msgid "TL;DR #{} removed - \"{}\""
+msgstr ""
+
+#: hangupsbot/plugins/tldr.py:198
+msgid "All TL;DRs cleared."
+msgstr ""
+
+#: hangupsbot/plugins/tldr.py:200
+msgid "Nothing specified to clear."
+msgstr ""
+
+#: hangupsbot/plugins/tldr.py:217
+msgid "TL;DR #{} edited - \"{}\" -> \"{}\""
+msgstr ""
+
+#: hangupsbot/plugins/tldr.py:219
+msgid "Unknown Command at \"tldr edit.\""
+msgstr ""
+
+#: hangupsbot/plugins/tldr.py:231
+msgid "<em>{}</em> added to TL;DR. Count: {}"
+msgstr ""
+
+#: hangupsbot/plugins/tldr.py:239
+msgid "{}s"
+msgstr ""
+
+#: hangupsbot/plugins/tldr.py:241
+msgid "{}m"
+msgstr ""
+
+#: hangupsbot/plugins/tldr.py:243
+msgid "{}h"
+msgstr ""
+
+#: hangupsbot/plugins/tldr.py:244
+msgid "{}d"
+msgstr ""
+
+#: hangupsbot/plugins/convtools_invitations.py:20
+msgid ""
+"manage invite for users:\n"
+"\"list\", \"purge\" allows listing and removing invites - add \"expired\" to "
+"view inactive invites\n"
+"\"from\" specifies users from source conversation id - if unset,gets users "
+"from current group or list of \"users\"\n"
+"\"to\" specifies destination conversation id - if unset, uses currentgroup "
+"or creates a new one\n"
+"\"test\" to prevent writing anythingto storage"
+msgstr ""
+
+#: hangupsbot/plugins/convtools_invitations.py:28
+msgid "show invite codes or claim an invite"
+msgstr ""
+
+#: hangupsbot/plugins/convtools_invitations.py:156
+msgid "<i>group created</i>"
+msgstr "<i>Gruppe erzeugt</i>"
+
+#: hangupsbot/plugins/convtools_invitations.py:158
+#, python-format
+msgid "GROUP: %s"
+msgstr ""
+
+#: hangupsbot/plugins/convtools_invitations.py:214
+msgid "<em>insufficient parameters for invite</em>"
+msgstr ""
+
+#: hangupsbot/plugins/convtools_invitations.py:231
+msgid "<b>Test Invitation Purge</b>"
+msgstr ""
+
+#: hangupsbot/plugins/convtools_invitations.py:233
+msgid "<b>Invitation Purge</b>"
+msgstr ""
+
+#: hangupsbot/plugins/convtools_invitations.py:236
+msgid "<b>Invitation List</b>"
+msgstr ""
+
+#: hangupsbot/plugins/convtools_invitations.py:265
+msgid "<em>no invites found</em>"
+msgstr "<em>Keine Einladungen gefunden</em>"
+
+#: hangupsbot/plugins/convtools_invitations.py:325
+msgid "<em>invite: specify \"from\" or explicit list of \"users\"</em>"
+msgstr ""
+"<em>Einladung: spezifiziere \"von\" oder explizite Liste von \"Usern\"</em>"
+
+#: hangupsbot/plugins/convtools_invitations.py:332
+msgid "<em>invite: could not identify target conversation"
+msgstr "<em>Einladung: konnte Ziel-Unterhaltung nicht identifizieren"
+
+#: hangupsbot/plugins/convtools_invitations.py:406
+msgid "<em>invite: nobody invited</em>"
+msgstr "<em>Einladung: niemanden eingeladen</em>"
+
+#: hangupsbot/plugins/convtools_invitations.py:430
+msgid "<em>invite: {} invitations created</em>"
+msgstr "<em>Einladung: {} Einladungen erzeugt</em>"
+
+#: hangupsbot/plugins/convtools_invitations.py:453
+msgid "<i>no invites to display</i>"
+msgstr ""
+
+#: hangupsbot/plugins/convtools_invitations.py:455
+msgid "<b>Invites for {}:</b>"
+msgstr "<b>Einladungen für {}:</b>"
+
+#: hangupsbot/plugins/convtools_invitations.py:460
+msgid "<b>{}</b> ... {} ({} days left)"
+msgstr ""
+
+#: hangupsbot/plugins/convtools_invitations.py:463
+msgid ""
+"<i>To claim an invite, use the rsvp command followed bythe invite code</i>"
+msgstr ""
+
+#: hangupsbot/plugins/spotify/__init__.py:59
+#, python-brace-format
+msgid ""
+"Commands to manage the Spotify playlist.\n"
+"<b>{bot_cmd} spotify</b> Returns whether Spotify is enabled in the current "
+"conversation\n"
+"<b>{bot_cmd} spotify on/off</b> Turns Spotify on or off.\n"
+"<b>{bot_cmd} spotify playlist</b> Returns the chat's playlist URL.\n"
+"<b>{bot_cmd} spotify <query></b> Directly adds a track to the playlist.\n"
+"<b>{bot_cmd} spotify remove <track></b> Removes the track from the playlist."
+msgstr ""
+
+#: hangupsbot/plugins/spotify/__init__.py:152
 msgid "<em>Unable to get the song title :(</em>"
 msgstr ""
 
-#: plugins/spotify.py:111
+#: hangupsbot/plugins/spotify/__init__.py:176
 msgid "<em>Spotify is <b>{}</b>.</em>"
 msgstr ""
 
-#: plugins/spotify.py:118
+#: hangupsbot/plugins/spotify/__init__.py:183
 msgid "<em>Spotify {} on. Now it's <b>{}</b>.</em>"
 msgstr ""
 
-#: plugins/spotify.py:126
-msgid "<em>Did you mean <b>/bot help spotify</b>?</em>"
+#: hangupsbot/plugins/spotify/__init__.py:188
+#, python-brace-format
+msgid ""
+"<em>Spotify is <b>off</b>. To turn it on, use <b>{bot_cmd} spotify on</b></"
+"em>"
 msgstr ""
 
-#: plugins/spotify.py:129
+#: hangupsbot/plugins/spotify/__init__.py:197
+msgid "Failed to create a new playlist for the chat"
+msgstr ""
+
+#: hangupsbot/plugins/spotify/__init__.py:199
 msgid "<em>Spotify playlist: {}</em>"
 msgstr ""
 
-#: plugins/spotify.py:132
+#: hangupsbot/plugins/spotify/__init__.py:202
 msgid "<em>You must specify a Spotify track.</em>"
 msgstr ""
 
-#: plugins/spotify.py:162
+#: hangupsbot/plugins/spotify/__init__.py:210
+msgid "Authentication is missing to file spotify requests"
+msgstr ""
+
+#: hangupsbot/plugins/spotify/__init__.py:246
 msgid "<em>No tracks found for '{}'.</em>"
 msgstr ""
 
-#: plugins/spotify.py:258
-msgid "<em>Added <b>{} by {}</b></em>"
+#: hangupsbot/plugins/spotify/__init__.py:364
+#: hangupsbot/plugins/spotify/__init__.py:396
+msgid "<i>Unable to create a new playlist for the current conversation</i>"
 msgstr ""
 
-#: plugins/spotify.py:261
+#: hangupsbot/plugins/spotify/__init__.py:374
 msgid "<em><b>Unable to add track:</b> {}</em>"
 msgstr ""
 
-#: plugins/spotify.py:272
-msgid "<em>Removed track <b>{} by {}</b>.</em>"
+#: hangupsbot/plugins/spotify/__init__.py:376
+msgid "<em>Added <b>{} by {}</b></em>"
 msgstr ""
 
-#: plugins/spotify.py:275
+#: hangupsbot/plugins/spotify/__init__.py:405
 msgid "<em><b>Unable to remove track:</b> {}</em>"
 msgstr ""
 
-#: plugins/starter.py:18
+#: hangupsbot/plugins/spotify/__init__.py:408
+msgid "<em>Removed track <b>{} by {}</b>.</em>"
+msgstr ""
+
+#: hangupsbot/plugins/spotify/__init__.py:412
+msgid ""
+"<i>Removed track {}, but could not fetch additional information about the "
+"track</i>"
+msgstr ""
+
+#: hangupsbot/plugins/cleverbot/__init__.py:44
+#, python-brace-format
+msgid ""
+"chat with cleverbot\n"
+"\n"
+"example: {bot_cmd} chat hi cleverbot!"
+msgstr ""
+
+#: hangupsbot/plugins/cleverbot/__init__.py:45
+msgid "tells cleverbot to forget things you've said in the past"
+msgstr ""
+
+#: hangupsbot/plugins/image/image_linker_reddit/__init__.py:19
+msgid ""
+"trigger popular reddit meme images (eg. type 'slowclap.gif').\n"
+"Full list at http://goo.gl/ORmisN"
+msgstr ""
+
+#: hangupsbot/plugins/image/image_screenshot/__init__.py:20
+msgid ""
+"get a screenshot of a user provided URL or the default URL of the hangout."
+msgstr ""
+
+#: hangupsbot/plugins/image/image_screenshot/__init__.py:23
+#, python-brace-format
+msgid ""
+"set url for current converation for the screenshot command.\n"
+"  use <b>{bot_cmd} clearurl</b> to clear the previous url before setting a "
+"new one."
+msgstr ""
+
+#: hangupsbot/plugins/image/image_screenshot/__init__.py:27
+msgid ""
+"clear the default-url for current converation for the screenshot command."
+msgstr ""
+
+#: hangupsbot/plugins/image/image_screenshot/__init__.py:78
+msgid ""
+"<i><b>{}</b> URL already exists for this conversation!\n"
+"\n"
+msgstr ""
+
+#: hangupsbot/plugins/image/image_screenshot/__init__.py:89
+msgid "<i><b>{}</b> nothing to clear for this conversation"
+msgstr ""
+
+#: hangupsbot/plugins/image/image_screenshot/__init__.py:93
+msgid "<i><b>{}</b> URL cleared for this conversation!\n"
+msgstr ""
+
+#: hangupsbot/plugins/image/image_screenshot/__init__.py:108
+msgid ""
+"<i><b>{}</b> No URL has been set for screenshots and none was provided "
+"manually."
+msgstr ""
+
+#: hangupsbot/plugins/image/image_memegenerator.py:14
+msgid ""
+"Searches for a meme related to <something>.\n"
+"grabs a random meme when none provided"
+msgstr ""
+
+#: hangupsbot/plugins/humor_hangoutcalls.py:31
+msgid ""
+"<b>It's been {} since the last call. Lonely? I can't reply you as I don't "
+"have speech synthesis (or speech recognition either!)</b>"
+msgstr ""
+
+#: hangupsbot/plugins/humor_hangoutcalls.py:39
+msgid "<b>It's been {} since the last call. The last caller was <i>{}</i>.</b>"
+msgstr ""
+
+#: hangupsbot/plugins/humor_hangoutcalls.py:45
+msgid "<b>No prizes for that call</b>"
+msgstr ""
+
+#: hangupsbot/plugins/monitoradds.py:18
+msgid "add user id(s) to the whitelist of who can add to a hangout"
+msgstr ""
+
+#: hangupsbot/plugins/monitoradds.py:20
+msgid "remove user id(s) from the whitelist of who can add to a hangout"
+msgstr ""
+
+#: hangupsbot/plugins/monitoradds.py:58
+#, python-brace-format
+msgid ""
+"<b>!!! WARNING !!!</b>\n"
+"\n"
+"<b>{0}</b> invited <b>{1}</b> without authorization.\n"
+"\n"
+"<b>{1}</b>: Please leave this hangout and ask a moderator to add you. Thank "
+"you for your understanding."
+msgstr ""
+
+#: hangupsbot/plugins/monitoradds.py:75 hangupsbot/plugins/monitoradds.py:80
+msgid "<i>Moderators updated: {} added</i>"
+msgstr "<i>Moderatoren aktualisiert: {} hinzugefügt</i>"
+
+#: hangupsbot/plugins/monitoradds.py:96
+msgid "<i>Moderators updated: {} removed</i>"
+msgstr "<i>Moderatoren aktualisiert: {} entfernt</i>"
+
+#: hangupsbot/plugins/starter.py:3
+#, python-brace-format
+msgid ""
+"<i>User must say \"hi\" to me first via a 1-on-1 hangout, open {url} and "
+"send me <b>{bot_cmd} verifyme</b>.</i>"
+msgstr ""
+
+#: hangupsbot/plugins/starter.py:7
+msgid "announce to the bot that you are spartacus aka the first bot-admin"
+msgstr ""
+
+#: hangupsbot/plugins/starter.py:10
+msgid "list bot file paths"
+msgstr ""
+
+#: hangupsbot/plugins/starter.py:12
+msgid ""
+"verify that the user has a 1-to-1 conversation with the bot.\n"
+"optionally, supply a user chat id to test a user other than yourself."
+msgstr ""
+
+#: hangupsbot/plugins/starter.py:16
+msgid ""
+"send a test message instructing the user to opena 1-to-1 hangout with the bot"
+msgstr ""
+
+#: hangupsbot/plugins/starter.py:35
 msgid "<i>Starter: Configuring first admin: {}</i>"
 msgstr "<i>Starter: Konfiguriere ersten admin: {}</i>"
 
-#: plugins/starter.py:23
+#: hangupsbot/plugins/starter.py:36
 msgid "<i>No! I am Spartacus!</i>"
 msgstr "<i>Nein! Ich bin Spartakus!</i>"
 
-#: plugins/starter.py:31
-msgid "<i>config: {}<br />memory: {}</i>"
-msgstr "<i>config: {}<br />Speicher: {}</i>"
+#: hangupsbot/plugins/starter.py:42
+msgid ""
+"<i>config: {}\n"
+"memory: {}</i>"
+msgstr ""
 
-#: plugins/starter.py:53
+#: hangupsbot/plugins/starter.py:61
 msgid ""
 "<i>verification completed - this is your one-to-one chat with the bot</i>"
 msgstr "<i>Verifizierung komplett - dies ist Dein 1-to-1 Chat mit dem bot</i>"
 
-#: plugins/starter.py:58
+#: hangupsbot/plugins/starter.py:67
 msgid "<i>verified - user has a one-to-one conversation with me</i>"
 msgstr "<i>Verifiziert - User hat eine 1-to-1 Unterhaltung mit mir</i>"
 
-#: plugins/starter.py:73
+#: hangupsbot/plugins/mentions/__init__.py:36
+msgid "alert a @mentioned user"
+msgstr ""
+
+#: hangupsbot/plugins/mentions/__init__.py:38
+#, python-brace-format
 msgid ""
-"<i>User must say \"hi\" to me first via a 1-on-1 hangout with <b>{}</b>."
+"allow users to configure pushbullet integration with their api key\n"
+"  {bot_cmd} pushbulletapi [<api key>|false]\n"
+"example: {bot_cmd} pushbulletapi XYZ"
 msgstr ""
-"<i>User muss zuerst \"hi\" zu mir sagen in einer 1-to-1 Unterhaltung mit "
-"<b>{}</b>."
 
-#: plugins/starter.py:74
-msgid "Then let me know by sending <b>/bot verifyme</b> in this chat.</i>"
+#: hangupsbot/plugins/mentions/__init__.py:43
+msgid "toggle the \"be more specific message\" on or off permanently"
 msgstr ""
-"Dann lass es mich wissen indem Du mit <b>/bot verifyme</b> in diesem Chat "
-"schickst.</i>"
 
-#: plugins/subscribe.py:126
-msgid "<b>{}</b> mentioned '{}' in <i>{}</i>:<br />{}"
-msgstr "<b>{}</b> hat '{}' in <i>{}</i> erwähnt:<br />{}"
-
-#: plugins/subscribe.py:149
+#: hangupsbot/plugins/mentions/__init__.py:46
+#, python-brace-format
 msgid ""
-"Note: I am unable to ping you until you start a 1 on 1 conversation with me!"
+"allow users to set a nickname for mentions and sync relays\n"
+"{bot_cmd} setnickname <nickname>\n"
+"example: {bot_cmd} setnickname alice"
 msgstr ""
-"Hinweis: Ich kann Dich nicht pingen bis Du eine 1-on-1 Unterhaltung mit mir "
-"beginnst!"
 
-#: plugins/subscribe.py:153
-msgid "Usage: /bot subscribe [keyword]"
-msgstr "Verwendung: /bot subscribe [keyword]"
+#: hangupsbot/plugins/mentions/__init__.py:152
+msgid ""
+"<b>{}</b>, you cannot @mention anyone until your DND status is toggled off."
+msgstr ""
+"<b>{}</b>, Du kannst niemanden @mention bis dein DND Status wieder "
+"ausgeschaltet ist."
 
-#: plugins/subscribe.py:157 plugins/subscribe.py:190
-msgid "Subscribed to: {}"
-msgstr "Abonniert: {}"
+#: hangupsbot/plugins/mentions/__init__.py:164
+msgid "<b>{}</b> cannot @mention anyone until they say something to me first."
+msgstr "<b>{}</b> kann niemanden @mention bis sie etwas zu mir gesagt haben."
 
-#: plugins/subscribe.py:164
-msgid "Already subscribed to '{}'!"
-msgstr "Bereits '{}' abonniert!"
+#: hangupsbot/plugins/mentions/__init__.py:203
+msgid "You are not allowed to mention all users in <b>{}</b>"
+msgstr ""
 
-#: plugins/subscribe.py:173 plugins/subscribe.py:181
+#: hangupsbot/plugins/mentions/__init__.py:210
+msgid "<b>{}</b> blocked from mentioning all users"
+msgstr ""
+
+#: hangupsbot/plugins/mentions/__init__.py:315
+msgid ""
+"{} users would be mentioned with \"@{}\"! Be more specific. List of matching "
+"users:"
+msgstr ""
+
+#: hangupsbot/plugins/mentions/__init__.py:327
+msgid "<i>To toggle this message on/off, use <b>{} bemorespecific</b></i>"
+msgstr ""
+
+#: hangupsbot/plugins/mentions/__init__.py:351
+msgid "{} mentioned you in {}"
+msgstr "{} hat Dich in {} erwähnt"
+
+#: hangupsbot/plugins/mentions/__init__.py:384
+msgid ""
+"<b>{}</b> @mentioned ALL in <i>{}</i> :\n"
+"{}"
+msgstr ""
+
+#: hangupsbot/plugins/mentions/__init__.py:386
+msgid ""
+"<b>{}</b> @mentioned you in <i>{}</i> :\n"
+"{}"
+msgstr ""
+
+#: hangupsbot/plugins/mentions/__init__.py:398
+msgid ""
+"@mention didn't work for <b>{}</b>. User must say something to me first."
+msgstr ""
+"@mention hat nicht geklappt für <b>{}</b>. User muss zuerst etwas zu mir "
+"sagen."
+
+#: hangupsbot/plugins/mentions/__init__.py:405
+msgid "<b>@mentions:</b>"
+msgstr ""
+
+#: hangupsbot/plugins/mentions/__init__.py:407
+msgid "1-to-1 fail"
+msgstr ""
+
+#: hangupsbot/plugins/mentions/__init__.py:408
+msgid "PushBullet fail"
+msgstr ""
+
+#: hangupsbot/plugins/mentions/__init__.py:409
+msgid "Ignored (DND)"
+msgstr ""
+
+#: hangupsbot/plugins/mentions/__init__.py:410
+msgid "Alerted"
+msgstr ""
+
+#: hangupsbot/plugins/mentions/__init__.py:420
+msgid "Nobody was successfully @mentioned ;-("
+msgstr ""
+
+#: hangupsbot/plugins/mentions/__init__.py:423
+msgid "Users failing 1-to-1 need to say something to me privately first."
+msgstr ""
+
+#: hangupsbot/plugins/mentions/__init__.py:435
+msgid "deactivating pushbullet integration"
+msgstr "Deaktiviere pushbullet-Integration"
+
+#: hangupsbot/plugins/mentions/__init__.py:438
+msgid "setting pushbullet api key"
+msgstr "Setze pushbullet API key"
+
+#: hangupsbot/plugins/mentions/__init__.py:442
+msgid "pushbullet configuration not changed"
+msgstr "pushbullet Konfiguration nicht geändert"
+
+#: hangupsbot/plugins/mentions/__init__.py:460
+msgid "<em>\"be more specific\" for mentions toggled ON</em>"
+msgstr "<em>\"Sei genauer\" für mentions EINgeschaltet</em>"
+
+#: hangupsbot/plugins/mentions/__init__.py:462
+msgid "<em>\"be more specific\" for mentions toggled OFF</em>"
+msgstr "<em>\"Sei genauer\" für mentions AUSgeschaltet</em>"
+
+#: hangupsbot/plugins/mentions/__init__.py:485
+msgid ""
+"Error: Minimum length of nickname is {} characters. Only alphabetical and "
+"numeric characters allowed."
+msgstr ""
+"Fehler: Minimale Länge eines Nicknames ist {} Zeichen. Nur alphabetische und "
+"numerische Zeichen erlaubt."
+
+#: hangupsbot/plugins/mentions/__init__.py:499
+msgid "<i>Nickname is already unset.</i>"
+msgstr ""
+
+#: hangupsbot/plugins/mentions/__init__.py:502
+msgid "<i>Removing nickname \"{}\"</i>"
+msgstr ""
+
+#: hangupsbot/plugins/mentions/__init__.py:511
+msgid "<i>Nickname <b>\"{}\"</b> is already in use by {}"
+msgstr ""
+
+#: hangupsbot/plugins/mentions/__init__.py:514
+msgid "<i>Your nickname is already <b>\"{}\"</b></i>"
+msgstr ""
+
+#: hangupsbot/plugins/mentions/__init__.py:526
+msgid "Setting nickname to '{}'"
+msgstr "Setze Nickname auf '{}'"
+
+#: hangupsbot/plugins/mentions/__init__.py:528
+msgid "Updating nickname to '{}'"
+msgstr ""
+
+#: hangupsbot/plugins/xkcd/__init__.py:28
+#, python-brace-format
+msgid ""
+"show latest comic\n"
+"  {bot_cmd} xkcd latest\n"
+"  {bot_cmd} xkcd current\n"
+"clear comic cache\n"
+"  {bot_cmd} xkcd clear\n"
+"search for a comic\n"
+"  {bot_cmd} xkcd search <query>"
+msgstr ""
+
+#: hangupsbot/plugins/subscribe.py:14
 msgid ""
 "Note: You will not be able to trigger your own subscriptions. To test, "
 "please ask somebody else to test this for you."
@@ -1017,133 +2245,1005 @@ msgstr ""
 "Hinweis: Sie können Ihre eigenen Abonnements nicht auslösen. Zum Testen "
 "fragen Sie bitte einen anderen Benutzer."
 
-#: plugins/subscribe.py:202
-msgid "Unsubscribing all keywords"
-msgstr "Abonnement aller Schlagwörtern gekündigt"
+#: hangupsbot/plugins/subscribe.py:18
+msgid ""
+"Note: I am unable to ping you until you start a 1on1 conversation with me!"
+msgstr ""
 
-#: plugins/subscribe.py:206
+#: hangupsbot/plugins/subscribe.py:37
+#, python-brace-format
+msgid ""
+"allow users to subscribe to phrases, only one input at a time\n"
+"example: {bot_cmd} subscribe Downtime"
+msgstr ""
+
+#: hangupsbot/plugins/subscribe.py:41
+msgid "Allow users to unsubscribe from phrases"
+msgstr ""
+
+#: hangupsbot/plugins/subscribe.py:43
+msgid "handle the event text and allow the user to be self-mentioned"
+msgstr ""
+
+#: hangupsbot/plugins/subscribe.py:53
+#, python-brace-format
+msgid ""
+"unsubscribe from keywords globally\n"
+"example: {bot_cmd} global_unsubscribe #audit"
+msgstr ""
+
+#: hangupsbot/plugins/subscribe.py:215
+msgid ""
+"<b>{}</b> mentioned \"{}\"{}:\n"
+"{}"
+msgstr ""
+
+#: hangupsbot/plugins/subscribe.py:318
+msgid "Already subscribed to '{}'!"
+msgstr "Bereits '{}' abonniert!"
+
+#: hangupsbot/plugins/subscribe.py:328
+#, python-brace-format
+msgid "Usage: {bot_cmd} subscribe [keyword]"
+msgstr ""
+
+#: hangupsbot/plugins/subscribe.py:335
+msgid "Subscribed to:"
+msgstr ""
+
+#: hangupsbot/plugins/subscribe.py:352
+msgid "No subscribes found for you"
+msgstr ""
+
+#: hangupsbot/plugins/subscribe.py:358
+msgid "Unsubscribing all keywords:"
+msgstr ""
+
+#: hangupsbot/plugins/subscribe.py:365
 msgid "Unsubscribing from keyword '{}'"
 msgstr "Kündige Abonnements des Schlagworts '{}'"
 
-#: plugins/subscribe.py:210
-msgid "Error: keyword not found"
-msgstr "Fehler: Schlagwort nicht gefunden"
-
-#: plugins/syncrooms.py:277
-msgid "<b>Sync Rooms: {}</b>"
-msgstr "<b>Sync Chats: {}</b>"
-
-#: plugins/syncrooms.py:281
-msgid "<b>Standard Room</b>"
-msgstr "<b>Standard Chats</b>"
-
-#: plugins/syncrooms.py:292
-msgid "<b>failed to retrieve user list</b>"
+#: hangupsbot/plugins/subscribe.py:373
+#, python-format
+msgid "keyword \"%s\" not found"
 msgstr ""
 
-#: plugins/syncrooms.py:313
-msgid "<b>Total Unique: {}</b>"
-msgstr "<b>Teilnehmende User: {}</b>"
-
-#: plugins/syncrooms_config.py:68
-msgid "<i>syncout updated: {} conversations</i>"
-msgstr "<i>syncout: {} Unterhaltungen aktualisiert</i>"
-
-#: plugins/syncrooms_config.py:71
-msgid "<i>syncout created: {} conversations</i>"
-msgstr "<i>syncout hat: {} Unterhaltungen erstellt</i>"
-
-#: plugins/syncrooms_config.py:74
-msgid "<i>syncouts unchanged</i>"
-msgstr "<i>syncouts unverändert</i>"
-
-#: plugins/syncrooms_config.py:115
-msgid "<i>`{}` was detached</i>"
-msgstr "<i>`{}` wurde losgelöst</i>"
-
-#: plugins/tldr.py:126
-msgid "{}. {} <b>{} ago</b>"
+#: hangupsbot/plugins/subscribe.py:416
+#, python-brace-format
+msgid ""
+"The conversation \"{alias}\" already receives messages containing "
+"\"{keyword}\"."
 msgstr ""
 
-#: plugins/tldr.py:131
-msgid "TL;DR not found."
+#: hangupsbot/plugins/subscribe.py:421
+#, python-brace-format
+msgid ""
+"These conversation will receive messages containing \"{keyword}\":\n"
+"{conv_ids}"
 msgstr ""
 
-#: plugins/tldr.py:134
-msgid "<b>TL;DR ({} stored):</b>"
+#: hangupsbot/plugins/subscribe.py:428
+#, python-brace-format
+msgid ""
+"The conversation \"{alias}\" is the only one with a subscribe on "
+"\"{keyword}\""
 msgstr ""
 
-#: plugins/tldr.py:135
-msgid "\n"
+#: hangupsbot/plugins/subscribe.py:436
+#, python-brace-format
+msgid "The conversation \"{alias}\" has subscribed to {keywords}"
 msgstr ""
 
-#: plugins/tldr.py:160 plugins/tldr.py:180
-msgid "TL;DR #{} not found."
+#: hangupsbot/plugins/subscribe.py:440
+msgid "None"
 msgstr ""
 
-#: plugins/tldr.py:165
-msgid "TL;DR #{} removed - \"{}\""
+#: hangupsbot/plugins/subscribe.py:470
+#, python-format
+msgid "No conversation has subscribed to %s"
 msgstr ""
 
-#: plugins/tldr.py:169
-msgid "All TL;DRs cleared."
+#: hangupsbot/plugins/subscribe.py:473
+#, python-brace-format
+msgid "The conversation \"{alias}\" has not subscribed to \"{keyword}\""
 msgstr ""
 
-#: plugins/tldr.py:171
-msgid "Nothing specified to clear."
+#: hangupsbot/plugins/subscribe.py:484
+#, python-brace-format
+msgid ""
+"The conversation \"{alias}\" will no longer receive messages containing "
+"\"{keyword}\""
 msgstr ""
 
-#: plugins/tldr.py:187
-msgid "TL;DR #{} edited - \"{}\" -> \"{}\""
+#: hangupsbot/plugins/slackrtm/commands_slack.py:100
+msgid ""
+"display command help for a single or all commands\n"
+"usage: help [command]"
 msgstr ""
 
-#: plugins/tldr.py:189
-msgid "Unknown Command at \"tldr edit.\""
+#: hangupsbot/plugins/slackrtm/commands_slack.py:102
+msgid "tells you the current channel/group id"
 msgstr ""
 
-#: plugins/tldr.py:200
-msgid "<em>{}</em> added to TL;DR. Count: {}"
+#: hangupsbot/plugins/slackrtm/commands_slack.py:103
+msgid "tells you your own user id"
 msgstr ""
 
-#: plugins/tldr.py:210
-msgid "{}s"
+#: hangupsbot/plugins/slackrtm/commands_slack.py:104
+msgid "*whois @username* tells you the user id of @username"
 msgstr ""
 
-#: plugins/tldr.py:212
-msgid "{}m"
+#: hangupsbot/plugins/slackrtm/commands_slack.py:105
+msgid "lists the slack users with admin privileges"
 msgstr ""
 
-#: plugins/tldr.py:214
-msgid "{}h"
+#: hangupsbot/plugins/slackrtm/commands_slack.py:106
+msgid "start the process to sync your slack profile with a G+ profile"
 msgstr ""
 
-#: plugins/tldr.py:216
-msgid "{}d"
+#: hangupsbot/plugins/slackrtm/commands_slack.py:108
+msgid "detach the slack profile from a previously attached G+ profile"
 msgstr ""
 
-#: plugins/urbandict.py:93
-msgid "<b>definition:</b> "
-msgstr "<b>Definition:</b> "
-
-#: plugins/urbandict.py:95
-msgid "<b>example:</b> "
-msgstr "<b>Beispiel:</b> "
-
-#: plugins/urbandict.py:100
-msgid "<i>no urban dictionary definition for \"{}\"</i>"
-msgstr "<i>Keine Definition im urban dictionary für \"{}\"</i>"
-
-#: plugins/urbandict.py:102
-msgid "<i>no term from urban dictionary</i>"
-msgstr "<i>Kein Begriff vom urban dictionary</i>"
-
-#: plugins/wolframalpha.py:34
-msgid "You need to ask WolframAlpha a question"
+#: hangupsbot/plugins/slackrtm/commands_slack.py:110
+msgid "list all conversation the bot is participant in"
 msgstr ""
 
-#: plugins/wolframalpha.py:57
-msgid "<i>Wolfram Alpha did not return any useful data</i>"
-msgstr "<i>Wolfram Alpha hat keine nützlichen Daten zurückgeliefert</i>"
+#: hangupsbot/plugins/slackrtm/commands_slack.py:111
+msgid "lists all running sync connections"
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_slack.py:112
+msgid ""
+"sync messages from the current channel/group to a specified hangout\n"
+"usage: syncto <hangout conversation id>"
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_slack.py:115
+msgid ""
+"stop syncing messages from the current channel/group to the specified "
+"hangout\n"
+"usage: disconnect <hangout conversation id>"
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_slack.py:118
+msgid "update the synced chattitle for the current or specified channel"
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_slack.py:120
+msgid "update a config entry for the current or given channel"
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_slack.py:164
+#, python-brace-format
+msgid "@{user_name}: you are in channel {channel_id}"
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_slack.py:178
+#, python-brace-format
+msgid "@{user_name}: your userid is {user_id}"
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_slack.py:193
+#, python-format
+msgid "%s: sorry, but you have to specify a username for command `whois`"
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_slack.py:199
+#, python-brace-format
+msgid "@{user_name}: the user id of _{name}_ is {other_id}"
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_slack.py:205
+#, python-brace-format
+msgid ""
+"@{user_name}: sorry, but I could not find user _{search}_ in this slack."
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_slack.py:244
+#, python-brace-format
+msgid ""
+"Your profile is already linked to a G+Profile, use *<@{name}> unsyncprofile* "
+"to unlink your profiles"
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_slack.py:250
+msgid "* [ REMINDER ] *\n"
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_slack.py:260
+#, python-brace-format
+msgid ""
+"*Please send me one of the messages below* <https://hangouts.google.com/chat/"
+"person/{bot_id}|in Hangouts>:\n"
+"Note: The message must start with *{bot_cmd}*, otherwise I do not process "
+"your message as a command and ignore your message.\n"
+"Our private Hangout and this chat will be automatically synced. You can then "
+"receive mentions and other messages I only send to private Hangouts. Use "
+"_split_  next to the token to block this sync.\n"
+"Use *<@{uid}> unsyncprofile* to cancel the process."
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_slack.py:304
+msgid "Slack and G+Profile are no more linked."
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_slack.py:314
+#, python-brace-format
+msgid ""
+"There is no G+Profile connected to your Slack Profile.\n"
+"Use *<@{name}> syncprofile* to connect one"
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_slack.py:371
+#, python-format
+msgid "sorry, but I'm not a member of a Hangout with Id %s"
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_slack.py:387
+msgid "sorry, but you have to specify a Hangout ID for `syncto`"
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_slack.py:401
+#, python-format
+msgid "This channel is already synced with Hangout _%s_."
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_slack.py:404
+#, python-format
+msgid "OK, I will now sync all messages in this channel with Hangout _%s_."
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_slack.py:422
+msgid "sorry, but you have to specify a Hangout Id for `disconnect`"
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_slack.py:436
+#, python-format
+msgid "This channel is *not* synced with the Hangout _%s_."
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_slack.py:439
+#, python-format
+msgid ""
+"OK, I will no longer sync messages in this channel with the Hangout _%s_."
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_slack.py:470
+msgid "specify the config key and it's new value"
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_slack.py:489
+#, python-brace-format
+msgid ""
+"{sync_option} updated for channel \"{channel_id}\" from \"{old}\" to "
+"\"{new}\""
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_hangouts.py:15
+#, python-brace-format
+msgid ""
+"start syncing the current hangout to a given slack team/channel\n"
+"    usage: {bot_cmd} slack_syncto <teamname> <channelid>"
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_hangouts.py:18
+#, python-brace-format
+msgid ""
+"stop syncing the current hangout with a given slack team and channel\n"
+"    usage: {bot_cmd} slack_disconnect <teamname> <channelid>"
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_hangouts.py:21
+#, python-brace-format
+msgid ""
+"list current conversations we are syncing\n"
+"    usage: {bot_cmd} slack_listsyncs"
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_hangouts.py:23
+#, python-brace-format
+msgid ""
+"list all slack channels available in a specified slackteam\n"
+"    usage: {bot_cmd} slack_channels <teamname>"
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_hangouts.py:25
+#, python-brace-format
+msgid ""
+"list all configured slack teams\n"
+"    usage: {bot_cmd} slacks"
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_hangouts.py:27
+#, python-brace-format
+msgid ""
+"list all slack users in a specified slack channelteam\n"
+"    usage: {bot_cmd} slack_users <team> <channel>"
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_hangouts.py:52
+#, python-format
+msgid "these slack teams match \"%s\", be more specific!"
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_hangouts.py:55
+#, python-brace-format
+msgid ""
+"there is no slack team with name \"{slack_name}\", use <i>{bot_cmd} slacks</"
+"i> to list all teams"
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_hangouts.py:79
+#, python-brace-format
+msgid ""
+"there is no channel with name \"{channel}\" in \"{slack_name}\", use "
+"<i>{bot_cmd} slack_channels {slack_name}</i> to list all channels"
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_hangouts.py:150
+msgid "specify slack team and channel"
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_hangouts.py:213
+#, python-brace-format
+msgid "hangout already synced with {teamname}:{channel}"
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/commands_hangouts.py:242
+msgid "current hangout not previously synced with {}:{}"
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/core.py:37
+#, python-brace-format
+msgid ""
+"_<https://plus.google.com/{chat_id}|{name}> has renamed the Hangout to "
+"*{new_name}*_"
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/core.py:982
+msgid ""
+"*Your profiles are connected and you will not receive my messages in Slack.*"
+msgstr ""
+
+#: hangupsbot/plugins/slackrtm/core.py:994
+msgid ""
+"*Your profiles are connected and you will receive my messages in Slack as "
+"well.*"
+msgstr ""
+
+#: hangupsbot/plugins/namelock.py:13
+#, python-brace-format
+msgid ""
+"locks a conversation title.\n"
+" {bot_cmd} topic <new_name>example: {bot_cmd} topic AlertsTo clear and "
+"unlock the title run\n"
+" {bot_cmd} topic"
+msgstr ""
+
+#: hangupsbot/plugins/namelock.py:74
+msgid "Removing topic"
+msgstr "Entferne Thema"
+
+#: hangupsbot/plugins/namelock.py:78
+msgid "Setting topic to '{}'"
+msgstr "Setze Thema auf '{}'"
+
+#: hangupsbot/plugins/catfact/__init__.py:10
+msgid "get catfacts"
+msgstr ""
+
+#: hangupsbot/plugins/forecast/__init__.py:20
+#, python-brace-format
+msgid ""
+"Sets the Lat Long default coordinates for this hangout when polling for "
+"weather data\n"
+"{bot_cmd} setWeatherLocation <location>"
+msgstr ""
+
+#: hangupsbot/plugins/forecast/__init__.py:24
+#, python-brace-format
+msgid ""
+"Returns weather information from darksky.net\n"
+" <b>{bot_cmd} weather <location></b>\n"
+"   Get location's current weather.\n"
+" <b>{bot_cmd} weather</b>\n"
+"   Get the hangouts default location's current weather. If the  default "
+"location is not set talk to a hangout admin."
+msgstr ""
+
+#: hangupsbot/plugins/forecast/__init__.py:31
+#, python-brace-format
+msgid ""
+"Returns a brief textual forecast from darksky.net\n"
+" <b>{bot_cmd} weather <location></b>\n"
+"   Get location's current forecast.\n"
+" <b>{bot_cmd} weather</b>\n"
+"   Get the hangouts default location's forecast. If default location is not "
+"set talk to a hangout admin."
+msgstr ""
+
+#: hangupsbot/plugins/forecast/__init__.py:53
+msgid "No location was specified, please specify a location."
+msgstr ""
+
+#: hangupsbot/plugins/forecast/__init__.py:57
+msgid "Unable to find the specified location."
+msgstr ""
+
+#: hangupsbot/plugins/forecast/__init__.py:64
+msgid "This hangouts default location has been set to {}."
+msgstr ""
+
+#: hangupsbot/plugins/forecast/__init__.py:71
+#: hangupsbot/plugins/forecast/__init__.py:78
+msgid ""
+"There was an error retrieving the weather, guess you need to look outside."
+msgstr ""
+
+#: hangupsbot/plugins/foursquare/__init__.py:12
+msgid ""
+"Set the Foursquare API key for the bot\n"
+"  Get one from https://foursquare.com/oauth"
+msgstr ""
+
+#: hangupsbot/plugins/foursquare/__init__.py:15
+msgid ""
+"Set the Foursquare client secret for your bot\n"
+"  Get it from https://foursquare.com/oauth"
+msgstr ""
+
+#: hangupsbot/plugins/foursquare/__init__.py:18
+#, python-brace-format
+msgid ""
+"Explore places near you with Foursquare!\n"
+" <b>{bot_cmd} foursquare <location></b>:\n"
+"   Display up to 10 of the recommended places near the specified location.\n"
+" <b>{bot_cmd} foursquare [type] <location></b>:\n"
+"Display up to 10 places near the provided location of the type specified.\n"
+"<i>Valid types: food, drinks, coffee, shops, arts, outdoors, sights, "
+"trending, specials</i>"
+msgstr ""
+
+#: hangupsbot/plugins/foursquare/__init__.py:106
+msgid ""
+"Something went wrong - make sure the Foursquare plugin is correctly "
+"configured."
+msgstr ""
+
+#: hangupsbot/plugins/foursquare/__init__.py:116
+msgid "Something went wrong."
+msgstr ""
+
+#: hangupsbot/plugins/simplewikipedia/__init__.py:9
+msgid "lookup a term on Wikipedia"
+msgstr ""
+
+#: hangupsbot/plugins/simplewikipedia/__init__.py:25
+msgid "<i>source: <a href=\"{}\">{}</a></i>"
+msgstr "<i>Quelle: <a href=\"{}\">{}</a></i>"
+
+#: hangupsbot/plugins/simplewikipedia/__init__.py:29
+msgid "<i>no entry found for {}</i>"
+msgstr "<i>Kein Eintrag gefunden für {}</i>"
+
+#: hangupsbot/sync/__init__.py:23
+msgid "<b>Edit:</b>\n"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:24
+msgid "[Gif]"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:25
+msgid "[Photo]"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:26
+msgid "[Sticker]"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:27
+msgid "[Video]"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:74
+#, python-brace-format
+msgid "<b>{name}</b> added {participants} {title}"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:76
+#, python-brace-format
+msgid "<b>{name}</b> kicked {participants} {title}"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:78
+#, python-brace-format
+msgid "<b>{name}</b> joined {title}"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:79
+#, python-brace-format
+msgid "<b>{name}</b> left {title}"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:151
+#, python-brace-format
+msgid ""
+"Enable or disable auto kick for the current or given conversation. This "
+"requires a configured user list, see <b>{bot_cmd} help check_users</b>. New "
+"users joining the specified conversation - or a sync-target of it - are "
+"kicked automatically if they were not added to the <i>check_users</i> -"
+"userlist before.\n"
+"Usage:\n"
+"{bot_cmd} autokick <conv_id | alias>\n"
+"inverts the current setting"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:160
+#, python-brace-format
+msgid ""
+"Update the synced title for a conversation, specify a conversation identifer "
+"to update the tag of another conversation.\n"
+"{bot_cmd} chattitle [<conv id>] <new title>\n"
+"The custom chattitle will be sent with a message from the specified "
+"conversation\n"
+"The example <i>{bot_cmd} chattitle \"touri\"</i> might result in a message "
+"on another platform that looks like\n"
+"'<b>Bob (touri) :</b> @alice where do I find X?'\n"
+"and the @mention message for \"alice\" will get the <i>live </i>-title:\n"
+"'Bob @mentioned you in \"Berlin Tourists\":\n"
+"@alice where do I find X?'"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:172
+#, python-brace-format
+msgid ""
+"<b>Usage:</b>\n"
+"{bot_cmd} syncusers [<conv_id>] [flat] [unique] [profilesync]\n"
+"All arguments are optional, use\n"
+" <i>flat</i>  to get all users in one list\n"
+" <i>unique</i> to remove duplicates, use it with flat\n"
+" <i>profilesync</i>  to include only users with a synced G+ profile\n"
+"\n"
+"{bot_cmd} syncusers flat unique\n"
+"{bot_cmd} syncusers profilesync"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:179
+#, python-brace-format
+msgid ""
+"Search for a user in a given conversation or search in all conversations\n"
+"<b>Usage:</b>\n"
+"{bot_cmd} finduser <term> [conv_id] [unique]"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:186
+#, python-brace-format
+msgid ""
+"Change the sync-setting for the private Hangout with the bot and the private-"
+"chat on another platform:\n"
+"{bot_cmd} sync1to1 <platform> [off]"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:190
+#, python-brace-format
+msgid ""
+"Perform a platform wide member check on the current or given conversation. "
+"Users will be automatically kicked or added, profilesyncs are used to "
+"identify users on other platforms. Usage:\n"
+"{bot_cmd} check_users [<conv id>] [<G+ user ids, 21 digits each>] "
+"[kick_only] [<add | remove>]\n"
+"\"kick_only\" does not add missing usersto the Hangout, edit an existing "
+"user list by adding \"add\" or \"remove\" to the command\n"
+"Note: The Bot needs kick-permissions: in Hangouts: not joined via invite-"
+"url; Telegram: chat setting may not be \"all users are admins\"\n"
+"Admins on each platform and the bot user are whitelisted on each platform.\n"
+"Examples ~ explaination:\n"
+"{bot_cmd} check_users\n"
+"~ check current conv with the last userlist or kick everyone\n"
+"{bot_cmd} check_users UgyiJIGTDLfz6d5cLVp4AaABAQ 012345678910111213141 "
+"123456789101112131415 kick_only\n"
+"~ reset the user list of \"UgyiJIGTDLfz6d5cLVp4AaABAQ\" to the two specified "
+"G+IDs and check all relays of the given conv_id whether users not matching "
+"these two user IDs are attending and kick those"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:211
+#, python-brace-format
+msgid ""
+"Change a per conversation config entry for the current conversation, another "
+"Hangouts conversation or a platform chat that has initialised by the other "
+"platform:\n"
+"{bot_cmd} sync_config [<conv identifer>] key <new value>\n"
+"To get list of available conv identifier, use\n"
+"{bot_cmd} sync_config list\n"
+"This list does not include regular Hangouts conv ids as these can be "
+"received via\n"
+"{bot_cmd} hangouts [<search term>]"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:223
+#, python-brace-format
+msgid ""
+"A profile sync connects your G+Profile to other platforms, like that you can "
+"use the bot commands and all other plugins of the bot as if you are on "
+"Hangouts and send from there. In addition synced messages can be posted with "
+"your G+ Name, and the configured custom nickname from <b>{bot_cmd} "
+"setnickname</b>. Unlease that power and start from your platform of choice "
+"with\n"
+"{platform_cmds}\n"
+"\n"
+"If the platform provides syncing of private chats and <i>split</i>  is not "
+"sent with your token, my private messages like mentions/subscribes/... will "
+"appear on the other platform as well.\n"
+"Examples:\n"
+"{bot_cmd} syncprofile DEMO123\n"
+"{bot_cmd} syncprofile 123DEMO split"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:293
+msgid "Platform specific conversations for sync_config:"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:312
+msgid ""
+"{sync_option} updated for conversation \"{conv-id}\" from \"{old}\" to "
+"\"{new}\""
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:337
+#, python-format
+msgid "%s is not a valid per conversation config key"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:343
+msgid "none"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:344
+msgid "true"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:345
+msgid "false"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:361
+#, python-brace-format
+msgid ""
+"{new} is not a valid value for {sync_option}: expected {wanted_type} but got "
+"{new_type}"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:412
+msgid "The current chattitle for {} is \"{}\"."
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:420
+msgid "Chattitle changed for {} from \"{}\" to \"{}\"."
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:463
+msgid "    <b>All platforms merged</b>:"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:467
+msgid "Users are listed per platform."
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:473
+#, python-brace-format
+msgid "~ in <i>{title}</i> :"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:509
+#, python-format
+msgid "You are not member of the chat \"%s\""
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:512
+msgid "{} users in total."
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:540
+#, python-format
+msgid "No users match \"%s\"."
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:560
+#, python-format
+msgid "Users matching \"%s\":"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:580 hangupsbot/sync/__init__.py:636
+msgid "There are no platform-syncs available!"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:585
+msgid "Check spelling or start the sync from the platform of your choice:"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:623
+msgid "specify a platform"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:642
+#, python-brace-format
+msgid ""
+"\"{term}\" is not a valid sync platform, choose one of:\n"
+"{platforms}"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:650
+#, python-brace-format
+msgid ""
+"You do not have a profilesync set for <b>{platform}</b>!\n"
+"Start one there with <b>{platform_cmd}</b>"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:657
+msgid "off"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:709
+msgid "specify at least one G+ID to perform a user check"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:712
+#, python-format
+msgid "allowed users in %s:"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:717
+#, python-format
+msgid "%s users in total"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:769
+msgid "success"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:770
+msgid "whitelisted"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:777
+msgid "Kick requests:"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:791
+msgid "Users added:"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:798
+msgid "No changes"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:852
+#, python-brace-format
+msgid "autokick is {state} for {conv_id}"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:853
+msgid "OFF"
+msgstr ""
+
+#: hangupsbot/sync/__init__.py:853
+msgid "ON"
+msgstr ""
+
+#: hangupsbot/__main__.py:108
+msgid "log detailed debugging messages"
+msgstr ""
+
+#: hangupsbot/__main__.py:110
+msgid "log file path"
+msgstr ""
+
+#: hangupsbot/__main__.py:112
+msgid "cookie storage path"
+msgstr ""
+
+#: hangupsbot/__main__.py:114
+msgid "memory storage path"
+msgstr ""
+
+#: hangupsbot/__main__.py:116
+msgid "config storage path"
+msgstr ""
+
+#: hangupsbot/__main__.py:118
+msgid "Maximum disconnect / reconnect retries before quitting"
+msgstr ""
+
+#: hangupsbot/__main__.py:122
+msgid "show program\"s version number and exit"
+msgstr ""
+
+#: hangupsbot/__main__.py:133
+#, python-format
+msgid "Failed to create directory: %s"
+msgstr ""
+
+#: hangupsbot/__main__.py:143
+#, python-format
+msgid "Failed to copy default config file: %s"
+msgstr ""
+
+#: hangupsbot/core.py:28
+#, python-brace-format
+msgid ""
+"<i>Hi there! I'll be using this channel to send private messages and alerts. "
+"For help, type <b>{bot_cmd} help</b>.\n"
+"To keep me quiet, reply with <b>{bot_cmd} optout</b>.</i>"
+msgstr ""
+
+#: hangupsbot/core.py:168
+msgid "{} already registered in shared"
+msgstr ""
+
+#: hangupsbot/core.py:708
+msgid ""
+"<i>{}, you are currently opted-out. Private message me or enter <b>{} "
+"optout</b> to get me to talk to you.</i>"
+msgstr ""
+"<i>{}, Du bist gerade im opt-out. Schicke mir eine private Nachricht oder "
+"gibt <b>{} optout</b> ein um mich wieder mit Dir sprechen zu lassen.</i>"
+
+#: hangupsbot/core.py:712
+msgid ""
+"<i>{}, before I can help you, you need to private message me and say hi.</i>"
+msgstr ""
+"<i>{}, bevor ich Dir helfen kann, musst Du mir eine private Nachricht "
+"schicken und Hi sagen.</i>"
+
+#~ msgid "<em>command echo blocked</em>"
+#~ msgstr "<em>Kommando echo blockiert</em>"
+
+#~ msgid "<i>syncroom \"{}\" language is {}</i>"
+#~ msgstr "<i>syncroom \"{}\" Sprache ist {}</i>"
+
+#~ msgid "<i>syncroom \"{}\" language set to {}</i>"
+#~ msgstr "<i>syncroom \"{}\" Sprache eingestellt auf {}</i>"
+
+#~ msgid "<i>bot alias: {}</i>"
+#~ msgstr "<i>Bot Alias: {}</i>"
+
+#~ msgid "<i>not authorised to change bot alias</i>"
+#~ msgstr "<i>Nicht authorisiert den bot alias zu ändern</i>"
+
+#~ msgid "GROUP: {}"
+#~ msgstr "GRUPPE: {}"
+
+#~ msgid ""
+#~ "<em>To claim an invite, use the rsvp command followed by the invite code</"
+#~ "em>"
+#~ msgstr ""
+#~ "<em>Um einer Einladung zu folgen, nutze das RVSP-Kommando gefolgt vom "
+#~ "invite code</em>"
+
+#~ msgid "<em>no invites to display</em>"
+#~ msgstr "<em>Keine Einladungen zum Anzeigen</em>"
+
+#~ msgid "<b>message:</b><br />{}<br /><b>to:</b><br />{}"
+#~ msgstr "<b>Nachricht: </b><br />{}<br /><b>an:</b><br />{}"
+
+#~ msgid "broadcast: message not allowed"
+#~ msgstr "Broadcast: Nachricht nicht erlaubt"
+
+#~ msgid "broadcast: {} conversation(s)"
+#~ msgstr "Broadcast: {} Unterhaltung(en)"
+
+#~ msgid "broadcast: removed {}"
+#~ msgstr "Broadcast: {} entfernt"
+
+#~ msgid "broadcast: message sent to {} chats"
+#~ msgstr "Broadcast: Nachricht an {} Chats gesendet"
+
+#~ msgid "broadcast: /bot broadcast [info|message|add|remove|NOW] ..."
+#~ msgstr "Broadcast: /bot broadcast [info|message|add|remove|NOW] ..."
+
+#~ msgid "broadcast: /bot broadcast [info|message|add|remove|NOW]"
+#~ msgstr "Broadcast: /bot broadcast [info|message|add|remove|NOW]"
+
+#~ msgid "<em>note: testing single parameter as json</em>"
+#~ msgstr "<em>Notiz: Teste einzelnen Parameter als json</em>"
+
+#~ msgid "Results for keyword <b>{}</b>:<br />"
+#~ msgstr "Resultate für Schlüsselwort <b>{}</b>:<br />"
+
+#~ msgid "<br />Row {}: "
+#~ msgstr "<br />Zeile {}: "
+
+#~ msgid "<br />{0} rows found. Only returning first {1}."
+#~ msgstr "<br />{0} Zeilen gefunden. Zeige nur die ersten {1}."
+
+#~ msgid "<br />Hint: Use <b>/bot lookup <{0} {1}</b> to view {0} rows"
+#~ msgstr ""
+#~ "<br />Tipp: Benutze <b>/bot lookup <{0} {1}</b> um {0} Zeilen zu sehen"
+
+#~ msgid ""
+#~ "{} users would be mentioned with \"@{}\"! Be more specific. List of "
+#~ "matching users:<br />"
+#~ msgstr ""
+#~ "{} Personen werden erwähnt mit \"@{}\"! Sei genauer. Liste passender "
+#~ "Personen:<br />"
+
+#~ msgid "<b>{}</b> @mentioned you in <i>{}</i>:<br />{}"
+#~ msgstr "<b>{}</b> @mentioned Dich in <i>{}</i>:<br />{}"
+
+#~ msgid "<b>@mentions:</b><br />"
+#~ msgstr "<b>@Erwähnungen:</b><br />"
+
+#~ msgid "1-to-1 fail: <i>{}</i><br />"
+#~ msgstr "1-zu-1 fehlgeschlagen: <i>{}</i><br />"
+
+#~ msgid "PushBullet fail: <i>{}</i><br />"
+#~ msgstr "PushBullet fehlgeschlagen: <i>{}</i><br />"
+
+#~ msgid "Ignored (DND): <i>{}</i><br />"
+#~ msgstr "Ignoriert (DND): <i>{}</i><br />"
+
+#~ msgid "Alerted: <i>{}</i><br />"
+#~ msgstr "Benachrichtigt: <i>{}</i><br />"
+
+#~ msgid "Nobody was successfully @mentioned ;-(<br />"
+#~ msgstr "Niemand wurde erfoglreich erwähnt ;-(<br />"
+
+#~ msgid ""
+#~ "Users failing 1-to-1 need to say something to me privately first.<br />"
+#~ msgstr ""
+#~ "User die 1-to-1 nicht benutzen können müssen mir zuerst eine private "
+#~ "Nachricht schicken.<br />"
+
+#~ msgid "Removing nickname"
+#~ msgstr "Entferne Nickname"
+
+#~ msgid "<i>config: {}<br />memory: {}</i>"
+#~ msgstr "<i>config: {}<br />Speicher: {}</i>"
+
+#~ msgid ""
+#~ "<i>User must say \"hi\" to me first via a 1-on-1 hangout with <b>{}</b>."
+#~ msgstr ""
+#~ "<i>User muss zuerst \"hi\" zu mir sagen in einer 1-to-1 Unterhaltung mit "
+#~ "<b>{}</b>."
+
+#~ msgid "Then let me know by sending <b>/bot verifyme</b> in this chat.</i>"
+#~ msgstr ""
+#~ "Dann lass es mich wissen indem Du mit <b>/bot verifyme</b> in diesem Chat "
+#~ "schickst.</i>"
+
+#~ msgid "<b>{}</b> mentioned '{}' in <i>{}</i>:<br />{}"
+#~ msgstr "<b>{}</b> hat '{}' in <i>{}</i> erwähnt:<br />{}"
+
+#~ msgid ""
+#~ "Note: I am unable to ping you until you start a 1 on 1 conversation with "
+#~ "me!"
+#~ msgstr ""
+#~ "Hinweis: Ich kann Dich nicht pingen bis Du eine 1-on-1 Unterhaltung mit "
+#~ "mir beginnst!"
+
+#~ msgid "Usage: /bot subscribe [keyword]"
+#~ msgstr "Verwendung: /bot subscribe [keyword]"
+
+#~ msgid "Subscribed to: {}"
+#~ msgstr "Abonniert: {}"
+
+#~ msgid "Unsubscribing all keywords"
+#~ msgstr "Abonnement aller Schlagwörtern gekündigt"
+
+#~ msgid "Error: keyword not found"
+#~ msgstr "Fehler: Schlagwort nicht gefunden"
+
+#~ msgid "<b>Sync Rooms: {}</b>"
+#~ msgstr "<b>Sync Chats: {}</b>"
+
+#~ msgid "<b>Standard Room</b>"
+#~ msgstr "<b>Standard Chats</b>"
+
+#~ msgid "<b>Total Unique: {}</b>"
+#~ msgstr "<b>Teilnehmende User: {}</b>"
 
 #~ msgid "{}: unknown command"
 #~ msgstr "{}: unbekanntes Kommando"
